@@ -113,7 +113,7 @@ All feature requests should be started by adding the feature, with all necessary
     git checkout main
     ```
 
-    After running the `git checkout` command, repeat step 6 to ensure your fork and the upstream repository are still in sync.
+    After running the `git checkout` command, **repeat step 6** to ensure your fork and the upstream repository are still in sync.
 
 12. Push the committed changes in your current branch to the remote repository.
 
