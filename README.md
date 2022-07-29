@@ -1,8 +1,8 @@
 # Credard - Proj-CC_gen-Team-124
 ## :zap: Project overview
 
-![[Contributors](https://img.shields.io/github/contributors/zuri-training/Proj-CC_gen-Team-124.svg?style=for-the-badge)](https://github.com/othneildrew/Best-README-Template/issues)
-![[Issues](https://img.shields.io/github/issues/zuri-training/Proj-CC_gen-Team-124.svg?style=for-the-badge)](https://github.com/othneildrew/Best-README-Template/graphs/contributors)
+![[Contributors](https://github.com/zuri-training/Proj-CC_gen-Team-124/issues)](https://img.shields.io/github/contributors/zuri-training/Proj-CC_gen-Team-124.svg?style=for-the-badge)
+![[Issues](https://github.com/zuri-training/Proj-CC_gen-Team-124/graphs/contributors)](https://img.shields.io/github/issues/zuri-training/Proj-CC_gen-Team-124.svg?style=for-the-badge)
 
 > A library of different types of credit card designs.
 
