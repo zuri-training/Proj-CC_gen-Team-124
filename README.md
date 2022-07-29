@@ -63,6 +63,16 @@ For information about how to contribute to this project, view the [contribution 
 - GitHub: [whitesoftx](https://github.com/whitesoftx)
 
 
+👤 **Sidney Anya**
+- GitHub: [SidKay](https://github.com/SidKay)
+
+👤 **Udhe Austine Ogaga**
+- GitHub: [Austinet](https://github.com/Austinet)
+
+
+
+
+
 <!-- 1. [Victoria Adedayo](https://github.com/VictoriaAde) - Team lead, frontend developer
 2. [Joshua Ayoola](https://github.com/Jehohshua) - Product designer
 3. [Ayobami Tunwase](https://github.com/ayobami11) - Frontend developer
