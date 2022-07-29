@@ -12,7 +12,10 @@
 
 **Credard** is a web application that allows users to
 customize their credit card designs by selecting from provided templates which can then modified to the 
-user's style. 
+user's style.
+
+![[Contributors](https://github.com/zuri-training/Proj-CC_gen-Team-124/issues)](https://img.shields.io/github/contributors/zuri-training/Proj-CC_gen-Team-124.svg?style=for-the-badge)
+![[Issues](https://github.com/zuri-training/Proj-CC_gen-Team-124/graphs/contributors)](https://img.shields.io/github/issues/zuri-training/Proj-CC_gen-Team-124.svg?style=for-the-badge)
 
 For a general overview of how the project works, check out the [documentation for the project presentation](https://docs.google.com/document/d/1DWA4ZwdISgN0JvuIN36B516YIxWYqzoncjOXI4zbpQM/edit).
 
