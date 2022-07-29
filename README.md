@@ -1,4 +1,4 @@
-# Credicard - Proj-CC_gen-Team-124
+# Credard - Proj-CC_gen-Team-124
 ## :zap: Project overview
 
 ![[Contributors](https://img.shields.io/github/contributors/zuri-training/Proj-CC_gen-Team-124.svg?style=for-the-badge)](https://github.com/othneildrew/Best-README-Template/issues)
@@ -6,9 +6,11 @@
 
 > A library of different types of credit card designs.
 
-Credicard is a web application that allows users to
+Credard is a web application that allows users to
 customize their credit card designs by selecting from provided templates which can then modified to the 
 user's style. 
+
+For a general overview of how the project works, check out the [documentation for the project presentation](https://docs.google.com/document/d/1DWA4ZwdISgN0JvuIN36B516YIxWYqzoncjOXI4zbpQM/edit).
 
 For information about how to contribute to this project, view the [contribution guidelines](https://github.com/zuri-training/Proj-CC_gen-Team-124/blob/main/CONTRIBUTING.md).
 
@@ -20,7 +22,7 @@ For information about how to contribute to this project, view the [contribution 
     </ol>
 </details> -->
 
-## :dart: Features
+<!-- ## :dart: Features
 
 There are 2 categories of users - authenticated and unauthenticated users.
 
@@ -35,7 +37,7 @@ There are 2 categories of users - authenticated and unauthenticated users.
     * View and interact with the documentation.
     * Download a credit card sample in their preferred file format.
     * Comment on a design and share on social media.
-    * Save data to download at a later time.
+    * Save data to download at a later time. -->
 
 ## :computer: Contributors
 
