@@ -1,0 +1,127 @@
+@import "base.css";
+
+  body{
+    padding: 0px 50px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+  }
+  a{
+    cursor: pointer;
+    color:#572B92;
+    text-decoration: none;
+  }
+  label{
+    color:#572B92;
+    font-size: 15px;
+  }
+
+  .register_button,
+  button{
+    background-color: #572B92;
+    color: #ffffff;
+    padding: 12px 20px;
+    min-width: 320px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  button:focus{
+    border: none;
+  }
+  button i{
+    padding: 0px 5px;
+    font-size: 20px !important;
+  }
+  input{
+    display: block;
+    outline: none;
+    border: none;
+    padding: 14px 10px;
+    min-width: 300px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+  }
+  nav{
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li img{
+    padding: 10px 30px;
+  }
+
+  .input-group{
+    padding: 10px 0px;
+  }
+  .input-group span{
+    float: right;
+    margin-right: 15px;
+    margin-top: -35px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .input-group p{
+    font-size: 14px;
+    text-align: right;
+    color: #CBAB3D;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .text-primary{
+    color: #572B92;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;     
+    justify-content: center; 
+    align-items: center;  
+  }
+  .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    align-content: center;
+    flex: 50%;
+    padding: 50px 20px;
+  }
+  .img-col img{
+    max-width: 500px;
+  }
+  .col form{
+    margin: auto;
+  }
+  .col form h2{
+    padding: 0px 0px 30px 0px;
+  }
+  .login_button{
+    display: block;
+    border: none;
+    margin: 20px 0px;
+  }
+  .google_button{
+    display: block;
+    color: #572B92;
+    background-color: #ffffff;
+    border: 1px solid #572B92;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .img-col{
+      display: none;
+    }
+    
+  }
