@@ -1,0 +1,19 @@
+@import url("global.css");
+@import url("base.css");
+
+body {
+  font-family: "bill corp nar";
+  background-color: var(--dark-purple);
+}
+.landing-page_header h1 {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 69px;
+  color: var(--white);
+  letter-spacing: -0.015em;
+}
+.landing-page_header h1 span {
+  color: var(--yellow_secondary);
+}
