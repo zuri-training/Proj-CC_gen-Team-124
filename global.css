@@ -108,10 +108,11 @@ img {
 
 /* Footer */
 .footer {
-    background: var(--blue);
+    background: url('./assets/Icons/Group 117.svg') no-repeat;
+    background-size: cover;
     color: var(--light-gray);
 
-    padding: 3em 5%;
+    padding: 11em 5% 3em;
 
     display: flex;
     flex-direction: column;
