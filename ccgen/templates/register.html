@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credard - Register</title>
+  <link rel="stylesheet" href="{% static 'styles/auth.css' %}">
+  <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><img src="{% static 'assets/images/logo.png' %}"></li>
+      <li style="float: right;">
+        <div style="display: inline-flex;">
+            <p style="padding: 0px 10px">Already have an account? </p>
+            <a href="login" class="register_button" style="max-width: 20px !important;">Login</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="row">
+    <div class="col form-col">
+      
+      <form>
+        <h2 class="text-center text-primary">Create Account</h2>
+        <button class="google_button" style="margin-top: 20px;">Continue with Google 
+          <i class="fa fa-google"></i>
+        </button>
+        <p class="text-center text-primary">or</p>
+        <div class="input-group">
+          <label>Email Address</label>
+          <input type="email"  name="email">
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" name="password">
+          <span toggle="#password-field" class="toggle-password"><img src="{% static 'assets/images/Shape.svg' %}"></span>
+        </div>
+        <div class="input-group">
+          <label>Repeat Password</label>
+          <input type="password" name="password-2">
+          <span toggle="#password-field" class="toggle-password"><img src="{% static 'assets/images.Shape.svg' %}"></span>
+        </div>
+        <button type="submit" class="login_button">Create Account</button>
+
+  
+      </form>
+    </div>
+    <div class="col img-col">
+      <img src="{% static 'assets/images/rafiki-2.png' %}">
+    </div>
+  </div>
+</body>
+</html>
+
