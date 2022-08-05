@@ -1,0 +1,200 @@
+@import "/base.css";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'manrope', sans-serif;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    min-height: 5.7rem;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav_bar, .main-nav_buttons{
+    display: none !important;
+}
+
+/* main */
+.frame{
+    background-color: var(--primary);
+    background-image: url(assets/images/frame-ellipse.svg);
+    height: 9.9rem;
+    color: var(--white);
+}
+
+.frame .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame .frame_words{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.contact-area{
+    margin: 5rem 0;
+}
+
+.contact-area .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact-area_form, .contact-area_image{
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact-area_form{
+    height: 100%;
+    margin-top: 0;
+}
+
+.contact-area_image img{
+    display: none;
+}
+
+.contact-area_form div{
+    margin-top: 2rem;
+}
+
+.contact-area_form input{
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    padding-left: 1.5rem;
+}
+
+.contact-area_form textarea{
+    width: 100%;
+    margin-top: 0.5rem;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+.contact-area_form button{
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+footer{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 3rem 0;
+}
+
+.main-footer .main-footer_top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.main-footer_top_nav{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.main-footer_top_nav div{
+    margin-left: 3.5rem;
+}
+
+.main-footer_top_nav h5{
+    margin-bottom: 1.2rem;
+}
+
+.main-footer_top p{
+    font-size: smaller;
+    font-weight: 100;
+    margin-top: 0.3rem;
+}
+.footer_line{
+    border: 1px solid var(--white);
+}
+
+.main-footer_bottom{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.main-footer_bottom_icon .copyright{
+    margin-top: 3.2rem;
+}
+
+.main-footer_bottom_icon{
+    display: flex;
+    justify-content: center;
+}
+
+.main-footer_bottom_icon img{
+    margin-left: 2.5rem;
+}
+
+.main-footer_bottom p{
+    font-size: smaller;
+    /* margin-top: 1.9rem; */
+}
+
+
+
+/* System Screen */
+@media (min-width: 720px) and (min-width: 1440px) {
+    /* Header */
+    .main-nav_bar, .main-nav_buttons{
+        display: block;
+    }
+
+
+
+    /* Footer */
+    .main-footer .main-footer_top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+    }  
+
+    .main-footer_bottom{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+};
