@@ -70,7 +70,20 @@ For information about how to contribute to this project, view the [contribution 
 👤 **Udhe Austine Ogaga**
 - GitHub: [Austinet](https://github.com/Austinet)
 
+👤 **Muhiz Akanni**
+- GitHub: [muakone](https://github.com/muakone)
 
+👤 **Atasie Rejoice**
+- GitHub: [Reucy](https://github.com/Reucy)
+
+👤 **Letticia Adimoha**
+- GitHub: [Letticia20](https://github.com/Letticia20)
+
+👤 **Ajagboye Daniela**
+- GitHub: [Dannyy247](https://github.com/Dannyy247)
+
+👤 **Ezedigwe Odilichukwu**
+- GitHub: [Odili1](https://github.com/Odili1)
 
 
 
