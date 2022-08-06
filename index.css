@@ -24,6 +24,28 @@ img {
   object-fit: cover;
 }
 
+/* Header navbar */
+.nav-div {
+  background: var(--dark-purple);
+}
+
+.nav_link {
+  color: var(--white);
+}
+
+.nav_login,
+.nav_register {
+  color: var(--dark-blue);
+}
+
+.nav_login {
+  background: var(--white);
+}
+
+.nav_register {
+  background: var(--yellow_secondary);
+}
+
 /* Hero section */
 .hero {
   background: url('./assets/images/landing-page-hero-bg.svg') no-repeat;
@@ -40,8 +62,6 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 1.5em;
-
-  height: 100%;
 }
 
 .hero_img {
@@ -57,7 +77,7 @@ img {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 2.5rem;
   line-height: 69px;
   color: var(--white);
   letter-spacing: -0.015em;
@@ -78,6 +98,7 @@ img {
   color: var(--dark-blue);
   font-weight: 800;
   padding: .75em 1.5em;
+  text-align: center;
 }
 
 .hero_link-1 {

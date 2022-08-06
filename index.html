@@ -6,10 +6,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="index.css" />
         <title>Credard</title>
+
+        <script src="./hamburger.js" defer></script>
     </head>
     <body>
         <!-- where the nav should be -->
+        <header class="nav-div">
+            <div class="nav_left">
+                <img
+                    class="nav_logo"
+                    src="./assets/images/credard-logo-white.svg"
+                    alt="Credard logo"
+                />
+                <nav class="nav_menu">
+                    <ul class="nav_list">
+                        <li><a class="nav_link" href="#">Features</a></li>
+                        <li><a class="nav_link" href="#">Library</a></li>
+                        <li><a class="nav_link" href="#">The team</a></li>
+                        <li><a class="nav_link" href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav_right">
+                <a class="nav_login" href="#">Login</a>
+                <a class="nav_register" href="#">Register</a>
+            </div>
+            <button id="hamburger-btn" class="nav_btn">
+                <img src="./assets/Icons/menu - ham-white.svg" alt="" />
+            </button>
+        </header>
         <main>
+            <nav id="hamburger-menu" class="ham_menu hide">
+                <ul>
+                    <li><a class="ham_link" href="#">Features</a></li>
+                    <li><a class="ham_link" href="#">Library</a></li>
+                    <li>
+                        <a class="ham_link" href="#">The team</a>
+                    </li>
+                    <li><a class="ham_link" href="#">Contact us</a></li>
+                </ul>
+                <div class="ham_btns">
+                    <a class="ham_login" href="#">Login</a>
+                    <a class="ham_register" href="#">Register</a>
+                </div>
+            </nav>
+
             <section class="hero">
                 <figure class="hero_fig">
                     <div class="hero_img-c">
@@ -115,7 +156,8 @@
             </section>
             <section class="register">
                 <figure class="register_fig">
-                    <a href="#"><!-- Links to register page -->
+                    <a href="#"
+                        ><!-- Links to register page -->
                         <img src="./assets/images/signup-form-img.svg" alt="" />
                     </a>
                     <figcaption>
