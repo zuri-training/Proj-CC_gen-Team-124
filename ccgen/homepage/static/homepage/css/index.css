@@ -1,0 +1,250 @@
+@import url("./global.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "bill corp nar";
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Header navbar */
+.nav-div {
+  background: var(--dark-purple);
+}
+
+.nav_link {
+  color: var(--white);
+}
+
+.nav_login,
+.nav_register {
+  color: var(--dark-blue);
+}
+
+.nav_login {
+  background: var(--white);
+}
+
+.nav_register {
+  background: var(--yellow_secondary);
+}
+
+/* Hero section */
+.hero {
+  background: url("../images/landing-page-hero-bg.svg") no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+
+  min-height: 100vh;
+  padding: 2em 5% 7em;
+}
+
+.hero_fig {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5em;
+}
+
+.hero_img {
+  max-width: 600px;
+  width: 100%;
+}
+
+.hero_figc {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 69px;
+  color: var(--white);
+  letter-spacing: -0.015em;
+}
+.hero h1 span {
+  color: var(--yellow_secondary);
+  font-weight: 600;
+}
+
+.hero_links {
+  display: flex;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+.hero_link {
+  border-radius: calc(5 / 16 * 1rem);
+  color: var(--dark-blue);
+  font-weight: 800;
+  padding: 0.75em 1.5em;
+  text-align: center;
+}
+
+.hero_link-1 {
+  background: var(--yellow_secondary);
+}
+
+.hero_link-2 {
+  background: var(--white);
+}
+
+/* Features section */
+.features {
+  padding: 2em 5%;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+
+  margin: 3em 0;
+}
+
+.feature_img {
+  max-width: 600px;
+  width: 100%;
+}
+
+.feature_figc {
+  max-width: 550px;
+}
+
+.feature_title {
+  color: var(--dark-blue);
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0.5em 0;
+}
+
+.feature_text {
+  color: var(--dark-gray);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.feature_btn {
+  background: var(--dark-purple);
+  color: var(--yellow_secondary);
+  border-radius: calc(5 / 16 * 1rem);
+  box-shadow: 1px 1px 3px 0px #00000040;
+  font-weight: 600;
+  margin: 1.5em 0;
+  padding: 0.75em 2.5em;
+}
+
+/* Register section */
+.register {
+  padding: 2em 5%;
+}
+
+.register_fig {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 2em;
+
+  margin: 0 auto;
+  max-width: 675px;
+  text-align: center;
+}
+
+.register_heading {
+  color: var(--pink_secondary_s2);
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1em 0;
+}
+
+.register_text {
+  font-size: calc(22 / 16 * 1rem);
+}
+
+/* Faq section */
+.faq {
+  padding: 2em 0;
+}
+
+.faq_header {
+  background: url("../images/faq-bg.svg") no-repeat;
+  background-size: cover;
+
+  margin: 1.5em 0;
+  padding: 5.75em 5%;
+  text-align: center;
+
+  display: grid;
+  place-items: center;
+}
+
+.faq_heading {
+  color: var(--dark-blue);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.faq_item {
+  border-bottom: 0.5px solid rgba(33, 33, 33, 0.5);
+  padding: 1.5em 5%;
+}
+
+.faq_question {
+  color: var(--medium-gray);
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq_reply {
+  margin-top: 1em;
+}
+
+.arrow-icon {
+  cursor: pointer;
+  width: 20px;
+}
+
+/* Media queries */
+@media (min-width: 700px) {
+  html {
+    font-size: 16px;
+  }
+
+  .hero_fig {
+    flex-direction: row-reverse;
+  }
+
+  .feature:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .feature:nth-child(even) {
+    flex-direction: row;
+  }
+}
