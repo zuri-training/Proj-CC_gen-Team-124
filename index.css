@@ -1,21 +1,16 @@
-@import url("./global.css");
 @import url("./base.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 * {
   box-sizing: border-box;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 html {
   font-size: 14px;
-}
-
-body {
-  font-family: "bill corp nar";
 }
 
 img {
@@ -48,10 +43,10 @@ img {
 
 /* Hero section */
 .hero {
-  background: url('./assets/images/landing-page-hero-bg.svg') no-repeat;
+  background: url("./assets/images/landing-page-hero-bg.svg") no-repeat;
   background-size: cover;
-  font-family: 'Montserrat', sans-serif;
-  
+  font-family: "Montserrat", sans-serif;
+
   min-height: 100vh;
   padding: 2em 5% 7em;
 }
@@ -97,7 +92,7 @@ img {
   border-radius: calc(5 / 16 * 1rem);
   color: var(--dark-blue);
   font-weight: 800;
-  padding: .75em 1.5em;
+  padding: 0.75em 1.5em;
   text-align: center;
 }
 
@@ -137,7 +132,7 @@ img {
   color: var(--dark-blue);
   font-size: 2rem;
   font-weight: 800;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .feature_text {
@@ -145,6 +140,7 @@ img {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.25;
+  margin-bottom: 2rem;
 }
 
 .feature_btn {
@@ -154,21 +150,20 @@ img {
   box-shadow: 1px 1px 3px 0px #00000040;
   font-weight: 600;
   margin: 1.5em 0;
-  padding: .75em 2.5em;
+  padding: 0.75em 2.5em;
 }
 
 /* Register section */
 .register {
   padding: 2em 5%;
-  
 }
 
 .register_fig {
   display: flex;
-  flex-direction:column-reverse;
+  flex-direction: column-reverse;
   align-items: center;
   gap: 2em;
-  
+
   margin: 0 auto;
   max-width: 675px;
   text-align: center;
@@ -191,7 +186,7 @@ img {
 }
 
 .faq_header {
-  background: url('./assets/images/faq-bg.svg') no-repeat;
+  background: url("./assets/images/faq-bg.svg") no-repeat;
   background-size: cover;
 
   margin: 1.5em 0;
@@ -217,7 +212,7 @@ img {
   color: var(--medium-gray);
   font-size: 1.25rem;
   font-weight: 700;
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,7 +220,6 @@ img {
 
 .faq_reply {
   margin-top: 1em;
-
 }
 
 .arrow-icon {

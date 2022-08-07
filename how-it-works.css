@@ -14,7 +14,6 @@ body {
   font-family: var(--font-primary);
   background-color: var(--white);
   color: #310057;
-  padding-bottom: 5rem;
 }
 main {
   font-weight: bold;
