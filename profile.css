@@ -201,6 +201,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 14%;
+  margin: 0;
 }
 .card-design__chip {
   width: 4.5rem;
@@ -316,7 +317,38 @@ body {
   margin: 10px 0 30px 0;
   cursor: pointer;
 }
+.hover-container {
+    background: rgba(78, 78, 78, 0.5);
+    width: 94%;
+    height: 32em;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -10px;
+    z-index: 999;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover-container p{
+    color: var(--white);
+    font-size: 24px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+.hover-container img{
+    transform: rotate(180deg);
+}
+
+.single-card-design__individual:hover .hover-container{
+    visibility: visible;
+    cursor: pointer;
+    transition: ease-in 10s;
+}
 @media (min-width: 375px) {
+    .hover-container{
+        height: 36rem;
+    }
   .card-design {
     height: 12em;
   }
@@ -352,6 +384,10 @@ body {
   .single-card-design__individual {
     width: 25rem;
   }
+  .hover-container{
+    width: 25rem;
+    height: 36rem;
+}
   .card-design {
     height: 13rem;
   }
@@ -414,13 +450,16 @@ body {
   .single-card-design button {
     width: 96%;
   }
+  .hover-container{
+    width: 45.6%;
+}
 }
 @media (min-width: 1024px) {
   .profile-about__btn button {
     display: block;
   }
   .card-design {
-    height: 16.5rem;
+    height: 15.7rem;
   }
   .card-design__expires {
     margin-top: 2rem;
@@ -439,6 +478,10 @@ body {
   .backContent__design-end {
     margin-top: 1.5rem;
   }
+  .hover-container{
+    width: 46%;
+    height: 44rem;
+}
 }
 @media (min-width: 1200px) {
   .saved-design__collections {
@@ -475,4 +518,7 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .hover-container{
+    width: 31.6%;
+}
 }
