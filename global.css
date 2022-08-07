@@ -109,6 +109,7 @@ img {
 
 /* Footer */
 .footer {
+  margin-top: 3rem;
   background: url("./assets/images/Group 117.svg") no-repeat;
   background-size: cover;
   color: var(--light-gray);
