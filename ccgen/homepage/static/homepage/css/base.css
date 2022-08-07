@@ -1,0 +1,28 @@
+/* Google font 
+Light 300
+Regular 400
+SemiBold 600
+You can add more style if needed in the design
+ */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@import url(./assets/font/billcorpnar-extrabold.ttf);
+/* You can add more varibles if needed in the design */
+:root {
+  --black: #000;
+  --white: #fff;
+  --primary: #8241db;
+  --yellow_secondary: #f4cd49;
+  --pink_secondary: #e46888;
+  --gray: #b5b5b5;
+  --success: #22bb33;
+  --warning: #ff7900;
+  --error: #f44336;
+  --dark-purple: #310057;
+  --blue: #572b92;
+  --light-gray: #eee;
+  --yellow: #cbab3d;
+  --dark-blue: #1a0d2c;
+  --dark-gray: #343434;
+  --medium-gray: #2f2f2f;
+  --pink_secondary_s2: #2e151b;
+}
