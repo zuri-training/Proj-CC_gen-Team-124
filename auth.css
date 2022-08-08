@@ -61,6 +61,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  cursor: pointer;
 }
 nav ul li {
   float: left;
@@ -68,6 +69,9 @@ nav ul li {
 
 nav ul li img {
   padding: 10px 30px;
+}
+.eye-img {
+  width: 4%;
 }
 
 .input-group {
@@ -83,7 +87,7 @@ nav ul li img {
 }
 .input-group p {
   font-size: 14px;
-  text-align: right;
+  text-align: left;
   color: #cbab3d;
 }
 .text-center {

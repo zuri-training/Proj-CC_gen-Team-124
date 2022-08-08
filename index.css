@@ -21,9 +21,12 @@ img {
 
 /* Header navbar */
 .nav-div {
+  cursor: pointer;
   background: var(--dark-purple);
 }
-
+.nav_logo {
+  width: 24%;
+}
 .nav_link {
   color: var(--white);
 }
@@ -43,7 +46,7 @@ img {
 
 /* Hero section */
 .hero {
-  background: url("./assets/images/landing-page-hero-bg.svg") no-repeat;
+  background: url("./assets/images/landing-page-hero-bg.webp") no-repeat;
   background-size: cover;
   font-family: "Montserrat", sans-serif;
 
@@ -186,7 +189,7 @@ img {
 }
 
 .faq_header {
-  background: url("./assets/images/faq-bg.svg") no-repeat;
+  background: url("./assets/images/faq-bg.webp") no-repeat;
   background-size: cover;
 
   margin: 1.5em 0;
