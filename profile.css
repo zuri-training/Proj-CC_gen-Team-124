@@ -397,6 +397,9 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .profile__header{
+    height: 15em;
+  }
   .profile-about__name {
     margin-top: -210px;
   }
