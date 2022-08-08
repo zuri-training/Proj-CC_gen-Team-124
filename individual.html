@@ -13,6 +13,54 @@
     <title>Individual card</title>
   </head>
   <body class="individual-page">
+    <div class="nav-div">
+        <div class="nav_left">
+          <img
+            class="nav_logo"
+            src="./assets/Icons/Layer 3.svg"
+            alt="Credard logo"
+          />
+          <nav class="nav_menu">
+            <ul class="nav_list">
+              <li><a class="nav_link" href="./how-it-works.html">How it works</a></li>
+              <li><a class="nav_link" href="#">Library</a></li>
+              <li><a class="nav_link" href="./team.html">The team</a></li>
+              <li><a class="nav_link" href="./contactUs.html">Contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav_right nav-right_auth">
+          <a href="#" class="nav_link">
+              <img src="./assets/Icons/Bookmark.svg" alt="bookmark">
+            </a>
+          <a href="./profile.html" class="nav_link">
+              <img src="./assets/Icons/profile.svg" alt="profile">
+            </a>
+        </div>
+        <button id="hamburger-btn" class="nav_btn">
+          <img src="./assets/Icons/menu - ham.svg" alt="" />
+        </button>
+      </div>
+      <div class="nav_hamburger-menu">
+        <nav id="hamburger-menu" class="ham_menu hide">
+          <ul>
+            <li><a class="ham_link" href="#">How it works</a></li>
+            <li><a class="ham_link" href="#">Library</a></li>
+            <li>
+              <a class="ham_link" href="./team.html">The team</a>
+            </li>
+            <li><a class="ham_link" href="./contactUs.html">Contact us</a></li>
+          </ul>
+          <div class="ham_auth">
+              <a href="#" class="ham_link">
+                  Bookmark
+                </a>
+            <a href="./profile.html" class="ham_link">
+              Profile
+            </a>
+          </div>
+        </nav>
+      </div>
     <section class="individual-page__main-content">
       <div class="main-content__container">
         <div class="main-content__container__card-info-section">
@@ -540,6 +588,7 @@
       </div>
       <button class="related-cards__view-all">viewAll</button>
     </section>
-    <script src="individual.js"></script>
+    <script src="./hamburger.js"></script>
+    <script src="./individual.js"></script>
   </body>
 </html>

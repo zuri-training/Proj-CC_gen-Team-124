@@ -89,6 +89,10 @@ img {
   display: none;
   gap: 1em;
 }
+.nav-right_auth {
+  gap: 2em;
+  margin-top: 1px;
+}
 
 .nav_login,
 .nav_register,
@@ -220,6 +224,12 @@ img {
   justify-content: center;
   align-items: center;
   gap: 1em;
+}
+.ham_auth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hide {
