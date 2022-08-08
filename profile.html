@@ -9,45 +9,53 @@
   </head>
   <body class="profile">
     <div class="nav-div">
-      <div class="nav_left">
-        <img
-          class="nav_logo"
-          src="./assets/Icons/Layer 3.svg"
-          alt="Credard logo"
-        />
-        <nav class="nav_menu">
-          <ul class="nav_list">
-            <li><a class="nav_link" href="#">Features</a></li>
-            <li><a class="nav_link" href="#">Library</a></li>
-            <li><a class="nav_link" href="#">The team</a></li>
-            <li><a class="nav_link" href="#">Contact us</a></li>
+        <div class="nav_left">
+          <img
+            class="nav_logo"
+            src="./assets/Icons/Layer 3.svg"
+            alt="Credard logo"
+          />
+          <nav class="nav_menu">
+            <ul class="nav_list">
+              <li><a class="nav_link" href="./how-it-works.html">How it works</a></li>
+              <li><a class="nav_link" href="#">Library</a></li>
+              <li><a class="nav_link" href="./team.html">The team</a></li>
+              <li><a class="nav_link" href="./contactUs.html">Contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav_right nav-right_auth">
+          <a href="#" class="nav_link">
+              <img src="./assets/Icons/Bookmark.svg" alt="bookmark">
+            </a>
+          <a href="./profile.html" class="nav_link">
+              <img src="./assets/Icons/profile.svg" alt="profile">
+            </a>
+        </div>
+        <button id="hamburger-btn" class="nav_btn">
+          <img src="./assets/Icons/menu - ham.svg" alt="" />
+        </button>
+      </div>
+      <div class="nav_hamburger-menu">
+        <nav id="hamburger-menu" class="ham_menu hide">
+          <ul>
+            <li><a class="ham_link" href="#">How it works</a></li>
+            <li><a class="ham_link" href="#">Library</a></li>
+            <li>
+              <a class="ham_link" href="./team.html">The team</a>
+            </li>
+            <li><a class="ham_link" href="./contactUs.html">Contact us</a></li>
           </ul>
+          <div class="ham_auth">
+              <a href="#" class="ham_link">
+                  Bookmark
+                </a>
+            <a href="./profile.html" class="ham_link">
+              Profile
+            </a>
+          </div>
         </nav>
       </div>
-      <div class="nav_right">
-        <a class="nav_login" href="#">Login</a>
-        <a class="nav_register" href="#">Register</a>
-      </div>
-      <button id="hamburger-btn" class="nav_btn">
-        <img src="./assets/Icons/menu - ham.svg" alt="" />
-      </button>
-    </div>
-    <div class="nav_hamburger-menu">
-      <nav id="hamburger-menu" class="ham_menu hide">
-        <ul>
-          <li><a class="ham_link" href="#">Features</a></li>
-          <li><a class="ham_link" href="#">Library</a></li>
-          <li>
-            <a class="ham_link" href="#">The team</a>
-          </li>
-          <li><a class="ham_link" href="#">Contact us</a></li>
-        </ul>
-        <div class="ham_btns">
-          <a class="ham_login" href="#">Login</a>
-          <a class="ham_register" href="#">Register</a>
-        </div>
-      </nav>
-    </div>
     <header class="profile__header"></header>
     <main class="profile__body">
       <section class="profile__body__about">
