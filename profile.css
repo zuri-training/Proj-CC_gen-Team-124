@@ -9,7 +9,7 @@ body {
 }
 .profile__header {
   width: 100vw;
-  height: 12em;
+  height: 15em;
   background-color: var(--dark-purple);
 }
 .profile__body {
@@ -148,7 +148,7 @@ body {
   background-size: cover;
 }
 .saved-design__four {
-  background-image: url(./assets/images/profile-card-design-2.webp);
+  background-image: url(./assets/images/saved-card-6.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
