@@ -16,15 +16,18 @@ body {
 
 ul {
   list-style: none;
+  cursor: pointer;
 }
 
 button {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {
@@ -36,7 +39,7 @@ img {
 .nav_hamburger-menu {
   flex: 1;
 }
-.nav_btn {
+nav {
   cursor: pointer;
 }
 /* Header navbar */
@@ -67,6 +70,7 @@ img {
 }
 
 .nav_list {
+  padding-top: 0;
   flex: 1;
   min-width: 300px;
 
@@ -114,7 +118,7 @@ img {
 /* Footer */
 .footer {
   margin-top: 3rem;
-  background: url("./assets/images/Group 117.svg") no-repeat;
+  background: url("./assets/images/Group-117.webp") no-repeat;
   background-size: cover;
   color: var(--light-gray);
 
@@ -225,7 +229,7 @@ img {
   align-items: center;
   gap: 1em;
 }
-.ham_auth{
+.ham_auth {
   display: flex;
   justify-content: center;
   align-items: center;

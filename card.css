@@ -19,13 +19,13 @@
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .card-design__one {
-  background: url(./assets/images/bg-design-1.png);
+  background: url(./assets/images/bg-design-1.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .card-design__two {
-  background: url(./assets/images/bg-design-4.jpg);
+  background: url(./assets/images/bg-design-4.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,13 +43,13 @@
   );
 }
 .card-design__four {
-  background: url(./assets/images/bg-design-2.png);
+  background: url(./assets/images/bg-design-2.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .card-design__five {
-  background: url(./assets/images/bg-design-3.png);
+  background: url(./assets/images/bg-design-3.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -150,7 +150,7 @@
 }
 .backContent--white .backContent--white__logo {
   width: 80%;
-  background-image: url(./assets/images/back-card-logo.png);
+  background-image: url(./assets/images/back-card-logo.webp);
 }
 .backContent--white span p {
   text-transform: uppercase;

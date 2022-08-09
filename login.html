@@ -10,14 +10,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <nav>
       <ul>
-        <li><img src="./assets/images/logo.png" /></li>
+        <li>
+          <a href="./index.html">
+            <img src="./assets/images/logo.webp" />
+          </a>
+        </li>
         <li style="float: right">
           <div style="display: inline-flex">
-            <p style="padding: 0px 10px">Don't have an account?</p>
+            <p style="padding: 0px 10px" class="opt-do_not_have">
+              Don't have an account?
+            </p>
             <a href="./register.html" class="register_button">Register</a>
           </div>
         </li>
@@ -35,20 +46,22 @@
             <label>Password</label>
             <input type="password" name="password" />
             <span toggle="#password-field" class="toggle-password"
-              ><img src="./assets/images/Shape.svg"
+              ><img class="eye-img" src="./assets/images/Shape.webp"
             /></span>
-            <p class="">Forgot your password?</p>
+            <p class="forgot-p">
+              <a href="./forgot-password.html">Forgot your password?</a>
+            </p>
           </div>
           <button type="submit" class="login_button">Log In</button>
-          <p class="text-center">or</p>
-          <button type="submit" class="google_button">
+          <!-- <p class="text-center">or</p> -->
+          <!-- <button type="submit" class="google_button">
             Log In with Google
             <i class="fa fa-google"></i>
-          </button>
+          </button> -->
         </form>
       </div>
       <div class="col img-col">
-        <img src="./assets/images/rafiki.png" />
+        <img src="./assets/images/rafiki.webp" />
       </div>
     </div>
   </body>

@@ -48,7 +48,7 @@ header {
 /* main */
 .frame {
   background-color: var(--dark-purple);
-  background-image: url(assets/images/frame-ellipse.svg);
+  background-image: url(./assets/Icons/frame-ellipse.svg);
   height: 9.9rem;
   color: var(--white);
 }
@@ -264,13 +264,16 @@ footer {
   /* Main */
   .frame {
     background-color: var(--dark-purple);
-    background-image: url(assets/images/frame-ellipse.svg);
+    background-image: url(./assets/Icons/frame-ellipse.svg);
     height: 15.5rem;
     color: var(--white);
   }
 
   .contact-area_image {
     display: inline-block;
+  }
+  .contact-area_image img {
+    width: 70%;
   }
 
   .contact-area_form input {

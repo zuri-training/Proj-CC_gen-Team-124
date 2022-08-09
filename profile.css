@@ -130,37 +130,37 @@ body {
   padding: 1.5rem 0;
 }
 .saved-design__one {
-  background-image: url(./assets/images/profile-card-design-1.svg);
+  background-image: url(./assets/images/profile-card-design-1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .saved-design__two {
-  background-image: url(./assets/images/profile-card-design-3.svg);
+  background-image: url(./assets/images/profile-card-design-3.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .saved-design__three {
-  background-image: url(./assets/images/profile-card-design-4.svg);
+  background-image: url(./assets/images/profile-card-design-4.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .saved-design__four {
-  background-image: url(./assets/images/profile-card-design-2.svg);
+  background-image: url(./assets/images/profile-card-design-2.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .saved-design__five {
-  background-image: url(./assets/images/profile-card-design-5.svg);
+  background-image: url(./assets/images/profile-card-design-5.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .saved-design__six {
-  background-image: url(./assets/images/profile-card-design-6.svg);
+  background-image: url(./assets/images/profile-card-design-6.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -274,7 +274,7 @@ body {
 }
 .backContent--white .backContent--white__logo {
   width: 80%;
-  background-image: url(./assets/images/back-card-logo.png);
+  background-image: url(./assets/images/back-card-logo.webp);
 }
 .backContent--white span p {
   text-transform: uppercase;
@@ -318,37 +318,37 @@ body {
   cursor: pointer;
 }
 .hover-container {
-    background: rgba(78, 78, 78, 0.5);
-    width: 94%;
-    height: 32em;
-    cursor: pointer;
-    position: absolute;
-    margin-top: -10px;
-    z-index: 999;
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: rgba(78, 78, 78, 0.5);
+  width: 94%;
+  height: 32em;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -10px;
+  z-index: 999;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hover-container p{
-    color: var(--white);
-    font-size: 24px;
-    margin-right: 5px;
-    font-weight: 600;
+.hover-container p {
+  color: var(--white);
+  font-size: 24px;
+  margin-right: 5px;
+  font-weight: 600;
 }
-.hover-container img{
-    transform: rotate(180deg);
+.hover-container img {
+  transform: rotate(180deg);
 }
 
-.single-card-design__individual:hover .hover-container{
-    visibility: visible;
-    cursor: pointer;
-    transition: ease-in 10s;
+.single-card-design__individual:hover .hover-container {
+  visibility: visible;
+  cursor: pointer;
+  transition: ease-in 10s;
 }
 @media (min-width: 375px) {
-    .hover-container{
-        height: 36rem;
-    }
+  .hover-container {
+    height: 36rem;
+  }
   .card-design {
     height: 12em;
   }
@@ -384,10 +384,10 @@ body {
   .single-card-design__individual {
     width: 25rem;
   }
-  .hover-container{
+  .hover-container {
     width: 25rem;
     height: 36rem;
-}
+  }
   .card-design {
     height: 13rem;
   }
@@ -397,9 +397,6 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .profile__header{
-    height: 15em;
-  }
   .profile-about__name {
     margin-top: -210px;
   }
@@ -453,9 +450,9 @@ body {
   .single-card-design button {
     width: 96%;
   }
-  .hover-container{
+  .hover-container {
     width: 45.6%;
-}
+  }
 }
 @media (min-width: 1024px) {
   .profile-about__btn button {
@@ -481,10 +478,10 @@ body {
   .backContent__design-end {
     margin-top: 1.5rem;
   }
-  .hover-container{
+  .hover-container {
     width: 46%;
     height: 44rem;
-}
+  }
 }
 @media (min-width: 1200px) {
   .saved-design__collections {
@@ -521,7 +518,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .hover-container{
+  .hover-container {
     width: 31.6%;
-}
+  }
 }
