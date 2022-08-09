@@ -17,7 +17,7 @@ body {
 .team-page__header__container {
   width: 100%;
   height: 100%;
-  background-color: #310057;
+  background-color: rgba(87, 43, 146, 0.65);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ body {
   column-gap: 0.125rem;
 }
 .member-profile {
-  width: 15.625rem;
+  width: 12.625rem;
   height: 15.625rem;
   box-shadow: 0px 0px 2.30769px 1.53846px rgba(87, 43, 146, 0.2);
   border-radius: 0.3125rem;
@@ -63,6 +63,9 @@ body {
   width: 5rem;
   height: 5rem;
 }
+.member-profile__author{
+  margin-top: 5px;
+}
 .member-profile__author h4 {
   font-size: 1rem;
   font-weight: 800;
@@ -70,6 +73,7 @@ body {
 .member-profile__author span {
   display: flex;
   margin-left: 1.25rem;
+  margin-top: 12px;
   margin-bottom: 1.5625rem;
 }
 .member-profile__author img {
@@ -86,6 +90,7 @@ body {
   width: 60%;
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 .member-profile__social-media img {
   width: 1.5625rem;
@@ -94,9 +99,6 @@ body {
 @media (min-width: 425px) {
   .team-page__body__container {
     grid-template-columns: auto auto;
-  }
-  .member-profile {
-    width: 90%;
   }
 }
 @media (min-width: 768px) {
@@ -115,7 +117,7 @@ body {
     row-gap: 3.75rem;
   }
   .member-profile {
-    width: 13.75rem;
+    width: 11.75rem;
   }
 }
 @media (min-width: 1024px) {
@@ -140,20 +142,20 @@ body {
     margin: 0 auto;
   }
   .member-profile {
-    width: 17.5rem;
-    height: 18.125rem;
+    width: 14.5rem;
+    height: 19.125rem;
   }
   .member-profile__img {
     width: 6.25rem;
     height: 6.25rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.7rem;
   }
   .member-profile__author h4 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
   }
   .member-profile__author span {
-    margin-left: 1.875rem;
+    margin-left: 0.75rem;
     margin-top: 0.875rem;
   }
   .member-profile__author img {
@@ -173,7 +175,7 @@ body {
 }
 @media (min-width: 1200px) {
   .member-profile {
-    width: 20.3125rem;
+    width: 17.3125rem;
     height: 21.875rem;
   }
   .member-profile__img {

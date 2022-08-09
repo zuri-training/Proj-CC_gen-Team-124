@@ -1,0 +1,64 @@
+@import url(base.css);
+@import url(individual.css);
+
+
+.saved-design__five, .saved-design__two,.saved-design__eight,.saved-design__eighteen,.saved-design__eleven,.saved-design__fifteen,.saved-design__five,.saved-design__four,.saved-design__fourteen,.saved-design__nine,.saved-design__nineteen,.saved-design__seven,.saved-design__seventeen,.saved-design__six,.saved-design__sixteen,.saved-design__ten,.saved-design__thirteen,.saved-design__three,.saved-design__twelve,.saved-design__twenty,.saved-design__twenty,.saved-design__twenty-four,.saved-design__twenty-one,.saved-design__twenty-three,.saved-design__twenty-two {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.saved-design__one {
+    background-image: url(./assets/images/card-design-8.svg);
+    
+  }
+  .saved-design__two {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__three {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__four {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__five {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__six {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__seven {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__eight {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__nine {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__ten {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__eleven {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__twelve {
+    background-image: url(./assets/images/card-design-8.svg);
+  }
+  .saved-design__thirteen {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__fourteen {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__fifteen {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__sixteen {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__seventeen {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__eighteen {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__nineteen {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__twenty {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__twenty-one {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__twenty-two {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__twenty-three {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__twenty-four {
+    background-image: url(./assets/images/card-design-8.svg);
+  }.saved-design__twenty-five {
+    background-image: url(./assets/images/card-design-8.svg);
+  }
