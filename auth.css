@@ -19,7 +19,7 @@ button {
   background-color: #572b92;
   color: #ffffff;
   padding: 12px 20px;
-  min-width: 320px;
+  min-width: 500px;
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
@@ -33,7 +33,12 @@ button {
   border-radius: 5px;
   text-align: center;
 }
-
+.opt-do_not_have {
+  align-self: center;
+}
+.forgot-p {
+  margin-top: 2em;
+}
 button:focus {
   border: none;
 }
@@ -46,7 +51,7 @@ input {
   outline: none;
   border: none;
   padding: 14px 10px;
-  min-width: 300px;
+  min-width: 500px;
   border-radius: 5px;
   margin: 5px 0px;
   box-shadow: 0 0 5pt 0.5pt #d3d3d3;
@@ -101,6 +106,7 @@ nav ul li img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 0 5rem;
 }
 .col {
   display: flex;
@@ -134,6 +140,9 @@ nav ul li img {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .img-col {
+    display: none;
+  }
+  .opt-do_not_have {
     display: none;
   }
 }
