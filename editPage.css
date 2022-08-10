@@ -93,27 +93,12 @@ nav {
   display: none;
   gap: 1em;
 }
-.nav-right_auth {
-  gap: 2em;
-  margin-top: 1px;
-}
 
-.nav_login,
-.nav_register,
-.ham_login,
-.ham_register {
-  border: 1px solid currentColor;
-  border-radius: calc(5 / 16 * 1rem);
-  color: var(--blue);
-  font-weight: 800;
-  padding: 0.6em 1.5em;
-}
+/* .nav_right .person{
+  margin-left: 0.5rem;
+} */
 
-.nav_register,
-.ham_register {
-  background: var(--blue);
-  color: var(--white);
-}
+
 
 
 /* Main */
@@ -183,9 +168,11 @@ form label{
     color: var(--dark-purple);
 }
 
-form P{
+form p{
     margin: 2rem 0rem;
-    color: var(--blue);
+    color: var(--gray);
+    font-size: larger;
+    font-weight: 700;
 }
 
 form .edit-button{
@@ -349,56 +336,70 @@ form .edit-button .edit-button_back{
 
 /* Media queries */
 @media (min-width: 700px) {
+  .nav_right .person{
+    margin-left: 0.3rem;
+  }
 
-    .edit_bar .edit_profileImage .image{
-        width: 22%;
-        box-shadow: 2px 2px 10px 0px rgba(56, 59, 59, 0.5);
-    }
+  .edit_bar{
+    background-color: transparent;
+    height: 12rem;
+    width: 100%;
+  }
 
-    form{
-        margin-top: 12rem;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .edit_bar .edit_profileImage .image{
+    width: 22%;
+    box-shadow: 2px 2px 10px 0px rgba(56, 59, 59, 0.5);
+  }
 
-    form .edit-button{
-        margin-top: 5rem;
-        width: 40%;
-    }
-    
+  form{
+    margin-top: 12rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    form .edit_username, .edit_password{
-        width: 60%;
-    }
+  form .edit_username, .edit_password{
+    width: 35%;
+  }
 
-    .footer{
-        margin-top: 9rem;
-    }
+  form .edit-button{
+    margin-top: 5rem;
+    width: 35%;
+  }
 
-    .footer_top,
-    .footer_bottom {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-    }
+  .footer{
+    margin-top: 9rem;
+  }
 
-    .footer_links {
-        flex: 1;
+  .footer_top,
+  .footer_bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
 
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 600px;
-    }
+  .footer_links {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 600px;
+  }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 800px){
     .edit_bar{
-        background-color: var(--blue);
+        background-color: transparent;
         height: 12rem;
         width: 100%;
+    }
+
+    form .edit-button .edit-button_back{
+      position: absolute;
+      top: 22rem;
+      left: 72%;
+      width: 22%;
     }
 
     .nav_menu {
