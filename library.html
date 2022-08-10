@@ -1,1128 +1,2282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
       href="/assets/images/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="library.css">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="library.css" />
+    <title>Credard Library</title>
+  </head>
+  <body>
+    <div class="nav-div">
+      <div class="nav_left">
+        <img
+          href="./index.html"
+          class="nav_logo"
+          src="./assets/Icons/Layer 3.svg"
+          alt="Credard logo"
+        />
+        <nav class="nav_menu">
+          <ul class="nav_list">
+            <li>
+              <a class="nav_link" href="./how-it-works.html">How it Works</a>
+            </li>
+            <li><a class="nav_link" href="#">Library</a></li>
+            <li><a class="nav_link" href="./team.html">The team</a></li>
+            <li><a class="nav_link" href="./contactUs.html">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav_right">
+        <a class="nav_login" href="./login.html">Login</a>
+        <a class="nav_register" href="./register.html">Register</a>
+      </div>
+      <button id="hamburger-btn" class="nav_btn">
+        <img src="./assets/Icons/menu - ham.svg" alt="" />
+      </button>
+    </div>
+    <div class="nav_hamburger-menu">
+      <nav id="hamburger-menu" class="ham_menu hide">
+        <ul>
+          <li><a class="ham_link" href="#">Features</a></li>
+          <li><a class="ham_link" href="#">Library</a></li>
+          <li>
+            <a class="ham_link" href="./team.html">The team</a>
+          </li>
+          <li><a class="ham_link" href="./contactUs.html">Contact us</a></li>
+        </ul>
+        <div class="ham_btns">
+          <a class="ham_login" href="./login.html">Login</a>
+          <a class="ham_register" href="./register.html">Register</a>
+        </div>
+      </nav>
+    </div>
     <main class="library-cards">
-        <section class="related-cards">
-            <div class="saved-design__collections">
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__seven">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
+      <header class="library-cards__header">
+        <h2>Library</h2>
+        <p>
+          Welcome to the largest library of credit card design templates,
+          interact and download any design of your choice for your personal use
+          and projects.
+        </p>
+      </header>
+      <section class="related-cards">
+        <div class="saved-design__collections">
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__one">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__one"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
                     </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__seven"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
                       </div>
-                      <div
-                        class="card-design card__container--back saved-design__seven"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__one"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__two">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__two"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__two"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__three">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__three"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__three"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__four">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__four"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__four"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__five">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__five"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__five"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__six">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__six"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__six"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__six">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__six"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__six"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__six">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__six"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__six"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__six">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__six"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__six"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__six">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__six"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__six"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__six">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__six"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__six"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__six">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__six"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__six"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__six">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__six"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__six"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__six">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__six"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__six"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__six">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__six"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__fifteen"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="./individual.html">
-                <div class="single-card-design">
-                  <div class="single-card-design__individual saved-design__sixteen">
-                    <div class="hover-container">
-                      <p>View more details</p>
-                      <img
-                        src="./assets/Icons/arrow-left-white.svg"
-                        alt="arrow-right"
-                      />
-                    </div>
-                    <div class="saved-card">
-                      <div
-                        class="card-design card__container--front saved-design__sixteen"
-                      >
-                        <div class="card-design__expires">
-                          <p>Expires</p>
-                          <h2>01/22</h2>
-                        </div>
-                        <div class="card-design__chip">
-                          <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
-                        </div>
-                        <div class="card-design__number">
-                          <p>8945 5768 5887 34522</p>
-                        </div>
-                        <div class="card-design__end">
-                          <div class="card-design__author">
-                            <p>Design Lovers</p>
-                          </div>
-                          <div class="card-design__logo">
-                            <img
-                              src="./assets/Icons/logo-icon-credard.svg"
-                              alt="card-design-logo"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="card-design card__container--back saved-design__sixteen"
-                      >
-                        <div class="card__container__backContent">
-                          <div class="backContent--black"></div>
-                          <div class="backContent--white">
-                            <div class="backContent--white__logo"></div>
-                            <span>
-                              <p>Cvv</p>
-                            </span>
-                          </div>
-                          <div class="backContent__design-end">
-                            <div class="backContent__about">
-                              <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nis.
-                              </p>
-                            </div>
-                            <div class="card-design__logo">
-                              <img
-                                src="./assets/Icons/logo-icon-credard.svg"
-                                alt="card-design-logo"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+              </div>
             </div>
-            <button class="related-cards__view-all">viewAll</button>
-          </section>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__two">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__two"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__two"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__three">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__three"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__three"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__four">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__four"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__four"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__five">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__five"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__five"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__six">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__six"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__six"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__seven">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__seven"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__seven"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__eight">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__eight"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__eight"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__nine">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__nine"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__nine"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__ten">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__ten"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__ten"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__eleven">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__eleven"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__eleven"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__twelve">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__twelve"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__twelve"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div
+                class="single-card-design__individual saved-design__fourteen"
+              >
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__fourteen"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__fourteen"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__fifteen">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__fifteen"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__fifteen"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__sixteen">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__sixteen"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__sixteen"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div
+                class="single-card-design__individual saved-design__seventeen"
+              >
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__seventeen"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__seventeen"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div
+                class="single-card-design__individual saved-design__thirteen"
+              >
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__thirteen"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__thirteen"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div
+                class="single-card-design__individual saved-design__eighteen"
+              >
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__eighteen"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__eighteen"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div
+                class="single-card-design__individual saved-design__nineteen"
+              >
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__nineteen"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__nineteen"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__twenty">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__twenty"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__twenty"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div
+                class="single-card-design__individual saved-design__twenty-one"
+              >
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__twenty-one"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__twenty-one"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div
+                class="single-card-design__individual saved-design__twenty-two"
+              >
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__twenty-two"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__twenty-two"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div
+                class="single-card-design__individual saved-design__twenty-three"
+              >
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__twenty-three"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__twenty-three"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./individual.html">
+            <div class="single-card-design">
+              <div
+                class="single-card-design__individual saved-design__twenty-four"
+              >
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="./assets/Icons/arrow-left-white.svg"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__twenty-four"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="./assets/Icons/card-chip.svg" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="./assets/Icons/logo-icon-credard.svg"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__twenty-four"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <img src="./assets/images/widget.svg" alt="widget-1" />
+          <img src="./assets/images/widget-3.svg" alt="widget-1" />
+          <img src="./assets/images/widget-2.svg" alt="widget-1" />
+        </div>
+        <div class="batch-two">
+          <div class="saved-design__collections">
+            <a href="./individual.html">
+              <div class="single-card-design">
+                <div
+                  class="single-card-design__individual saved-design__twenty-five"
+                >
+                  <div class="hover-container">
+                    <p>View more details</p>
+                    <img
+                      src="./assets/Icons/arrow-left-white.svg"
+                      alt="arrow-right"
+                    />
+                  </div>
+                  <div class="saved-card">
+                    <div
+                      class="card-design card__container--front saved-design__twenty-five"
+                    >
+                      <div class="card-design__expires">
+                        <p>Expires</p>
+                        <h2>01/22</h2>
+                      </div>
+                      <div class="card-design__chip">
+                        <img
+                          src="./assets/Icons/card-chip.svg"
+                          alt="card-chip"
+                        />
+                      </div>
+                      <div class="card-design__number">
+                        <p>8945 5768 5887 34522</p>
+                      </div>
+                      <div class="card-design__end">
+                        <div class="card-design__author">
+                          <p>Design Lovers</p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-design card__container--back saved-design__twenty-five"
+                    >
+                      <div class="card__container__backContent">
+                        <div class="backContent--black"></div>
+                        <div class="backContent--white">
+                          <div class="backContent--white__logo"></div>
+                          <span>
+                            <p>Cvv</p>
+                          </span>
+                        </div>
+                        <div class="backContent__design-end">
+                          <div class="backContent__about">
+                            <p>
+                              "Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Ut enim ad minim
+                              veniam, quis nostrud exercitation ullamco laboris
+                              nis.
+                            </p>
+                          </div>
+                          <div class="card-design__logo">
+                            <img
+                              src="./assets/Icons/logo-icon-credard.svg"
+                              alt="card-design-logo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./individual.html">
+              <div class="single-card-design">
+                <div
+                  class="single-card-design__individual saved-design__twenty-six"
+                >
+                  <div class="hover-container">
+                    <p>View more details</p>
+                    <img
+                      src="./assets/Icons/arrow-left-white.svg"
+                      alt="arrow-right"
+                    />
+                  </div>
+                  <div class="saved-card">
+                    <div
+                      class="card-design card__container--front saved-design__twenty-six"
+                    >
+                      <div class="card-design__expires">
+                        <p>Expires</p>
+                        <h2>01/22</h2>
+                      </div>
+                      <div class="card-design__chip">
+                        <img
+                          src="./assets/Icons/card-chip.svg"
+                          alt="card-chip"
+                        />
+                      </div>
+                      <div class="card-design__number">
+                        <p>8945 5768 5887 34522</p>
+                      </div>
+                      <div class="card-design__end">
+                        <div class="card-design__author">
+                          <p>Design Lovers</p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-design card__container--back saved-design__twenty-six"
+                    >
+                      <div class="card__container__backContent">
+                        <div class="backContent--black"></div>
+                        <div class="backContent--white">
+                          <div class="backContent--white__logo"></div>
+                          <span>
+                            <p>Cvv</p>
+                          </span>
+                        </div>
+                        <div class="backContent__design-end">
+                          <div class="backContent__about">
+                            <p>
+                              "Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Ut enim ad minim
+                              veniam, quis nostrud exercitation ullamco laboris
+                              nis.
+                            </p>
+                          </div>
+                          <div class="card-design__logo">
+                            <img
+                              src="./assets/Icons/logo-icon-credard.svg"
+                              alt="card-design-logo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./individual.html">
+              <div class="single-card-design">
+                <div
+                  class="single-card-design__individual saved-design__twenty-seven"
+                >
+                  <div class="hover-container">
+                    <p>View more details</p>
+                    <img
+                      src="./assets/Icons/arrow-left-white.svg"
+                      alt="arrow-right"
+                    />
+                  </div>
+                  <div class="saved-card">
+                    <div
+                      class="card-design card__container--front saved-design__twenty-seven"
+                    >
+                      <div class="card-design__expires">
+                        <p>Expires</p>
+                        <h2>01/22</h2>
+                      </div>
+                      <div class="card-design__chip">
+                        <img
+                          src="./assets/Icons/card-chip.svg"
+                          alt="card-chip"
+                        />
+                      </div>
+                      <div class="card-design__number">
+                        <p>8945 5768 5887 34522</p>
+                      </div>
+                      <div class="card-design__end">
+                        <div class="card-design__author">
+                          <p>Design Lovers</p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-design card__container--back saved-design__twenty-seven"
+                    >
+                      <div class="card__container__backContent">
+                        <div class="backContent--black"></div>
+                        <div class="backContent--white">
+                          <div class="backContent--white__logo"></div>
+                          <span>
+                            <p>Cvv</p>
+                          </span>
+                        </div>
+                        <div class="backContent__design-end">
+                          <div class="backContent__about">
+                            <p>
+                              "Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Ut enim ad minim
+                              veniam, quis nostrud exercitation ullamco laboris
+                              nis.
+                            </p>
+                          </div>
+                          <div class="card-design__logo">
+                            <img
+                              src="./assets/Icons/logo-icon-credard.svg"
+                              alt="card-design-logo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./individual.html">
+              <div class="single-card-design">
+                <div
+                  class="single-card-design__individual saved-design__twenty-eight"
+                >
+                  <div class="hover-container">
+                    <p>View more details</p>
+                    <img
+                      src="./assets/Icons/arrow-left-white.svg"
+                      alt="arrow-right"
+                    />
+                  </div>
+                  <div class="saved-card">
+                    <div
+                      class="card-design card__container--front saved-design__twenty-eight"
+                    >
+                      <div class="card-design__expires">
+                        <p>Expires</p>
+                        <h2>01/22</h2>
+                      </div>
+                      <div class="card-design__chip">
+                        <img
+                          src="./assets/Icons/card-chip.svg"
+                          alt="card-chip"
+                        />
+                      </div>
+                      <div class="card-design__number">
+                        <p>8945 5768 5887 34522</p>
+                      </div>
+                      <div class="card-design__end">
+                        <div class="card-design__author">
+                          <p>Design Lovers</p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-design card__container--back saved-design__twenty-eight"
+                    >
+                      <div class="card__container__backContent">
+                        <div class="backContent--black"></div>
+                        <div class="backContent--white">
+                          <div class="backContent--white__logo"></div>
+                          <span>
+                            <p>Cvv</p>
+                          </span>
+                        </div>
+                        <div class="backContent__design-end">
+                          <div class="backContent__about">
+                            <p>
+                              "Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Ut enim ad minim
+                              veniam, quis nostrud exercitation ullamco laboris
+                              nis.
+                            </p>
+                          </div>
+                          <div class="card-design__logo">
+                            <img
+                              src="./assets/Icons/logo-icon-credard.svg"
+                              alt="card-design-logo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./individual.html">
+              <div class="single-card-design">
+                <div
+                  class="single-card-design__individual saved-design__twenty-nine"
+                >
+                  <div class="hover-container">
+                    <p>View more details</p>
+                    <img
+                      src="./assets/Icons/arrow-left-white.svg"
+                      alt="arrow-right"
+                    />
+                  </div>
+                  <div class="saved-card">
+                    <div
+                      class="card-design card__container--front saved-design__twenty-nine"
+                    >
+                      <div class="card-design__expires">
+                        <p>Expires</p>
+                        <h2>01/22</h2>
+                      </div>
+                      <div class="card-design__chip">
+                        <img
+                          src="./assets/Icons/card-chip.svg"
+                          alt="card-chip"
+                        />
+                      </div>
+                      <div class="card-design__number">
+                        <p>8945 5768 5887 34522</p>
+                      </div>
+                      <div class="card-design__end">
+                        <div class="card-design__author">
+                          <p>Design Lovers</p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-design card__container--back saved-design__twenty-nine"
+                    >
+                      <div class="card__container__backContent">
+                        <div class="backContent--black"></div>
+                        <div class="backContent--white">
+                          <div class="backContent--white__logo"></div>
+                          <span>
+                            <p>Cvv</p>
+                          </span>
+                        </div>
+                        <div class="backContent__design-end">
+                          <div class="backContent__about">
+                            <p>
+                              "Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Ut enim ad minim
+                              veniam, quis nostrud exercitation ullamco laboris
+                              nis.
+                            </p>
+                          </div>
+                          <div class="card-design__logo">
+                            <img
+                              src="./assets/Icons/logo-icon-credard.svg"
+                              alt="card-design-logo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./individual.html">
+              <div class="single-card-design">
+                <div
+                  class="single-card-design__individual saved-design__thirty"
+                >
+                  <div class="hover-container">
+                    <p>View more details</p>
+                    <img
+                      src="./assets/Icons/arrow-left-white.svg"
+                      alt="arrow-right"
+                    />
+                  </div>
+                  <div class="saved-card">
+                    <div
+                      class="card-design card__container--front saved-design__thirty"
+                    >
+                      <div class="card-design__expires">
+                        <p>Expires</p>
+                        <h2>01/22</h2>
+                      </div>
+                      <div class="card-design__chip">
+                        <img
+                          src="./assets/Icons/card-chip.svg"
+                          alt="card-chip"
+                        />
+                      </div>
+                      <div class="card-design__number">
+                        <p>8945 5768 5887 34522</p>
+                      </div>
+                      <div class="card-design__end">
+                        <div class="card-design__author">
+                          <p>Design Lovers</p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="./assets/Icons/logo-icon-credard.svg"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-design card__container--back saved-design__thirty"
+                    >
+                      <div class="card__container__backContent">
+                        <div class="backContent--black__white"></div>
+                        <div class="backContent--white">
+                          <div class="backContent--white__logo"></div>
+                          <span>
+                            <p>Cvv</p>
+                          </span>
+                        </div>
+                        <div class="backContent__design-end">
+                          <div class="backContent__about">
+                            <p>
+                              "Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Ut enim ad minim
+                              veniam, quis nostrud exercitation ullamco laboris
+                              nis.
+                            </p>
+                          </div>
+                          <div class="card-design__logo">
+                            <img
+                              src="./assets/Icons/logo-icon-credard.svg"
+                              alt="card-design-logo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="view-more-cards">Load More Options</button>
+      </section>
     </main>
-</body>
+    <footer class="footer">
+      <div class="footer_top">
+        <div>
+          <img
+            href="./index.html"
+            src="./assets/Icons/Group 44.svg"
+            alt="Logo"
+          />
+        </div>
+
+        <div class="footer_links">
+          <nav>
+            <h3 class="footer_heading">Support</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="./contactUs.html">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h3 class="footer_heading">Library</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="#">View Library</a>
+              </li>
+              <li>
+                <a class="footer_link" href="./saved-designs.html"
+                  >Saved Designs</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h3 class="footer_heading">Company</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="./team.html">Meet the Team</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr class="footer_hr" />
+      <div class="footer_bottom">
+        <p class="footer_copyright">© Credard Inc. 2022</p>
+        <div class="social">
+          <p>Follow us:</p>
+          <nav>
+            <ul class="social_link">
+              <li>
+                <a href="#" title="Twitter"
+                  ><img src="./assets/Icons/Twitter.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="Facebook"
+                  ><img src="./assets/Icons/Facebook.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="LinkedIn"
+                  ><img src="./assets/Icons/Linked in.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="Instagram"
+                  ><img src="./assets/Icons/Instagram.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="./library.js"></script>
+    <script src="./hamburger.js"></script>
+  </body>
 </html>
