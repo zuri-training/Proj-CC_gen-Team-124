@@ -58,7 +58,7 @@
   background: radial-gradient(
     50.05% 57.8% at 50.05% 42.2%,
     #ff4aac 3.03%,
-    #a31863 100%
+    hsl(328, 74%, 37%) 100%
   );
 }
 
