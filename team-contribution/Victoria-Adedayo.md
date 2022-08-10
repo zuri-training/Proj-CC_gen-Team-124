@@ -30,7 +30,20 @@
 **Connect Pages**
 
 [Link to commit](https://github.com/zuri-training/Proj-CC_gen-Team-124/commit/be4bacf3ad86811fd115f6b43db586b85f239da6)
+<hr>
 
+**add index files, add nav and footer**
+<br>
+[Link to merged PR](https://github.com/zuri-training/Proj-CC_gen-Team-124/pull/45)
 
+<hr>
+
+**Implemented comment modal popup on individual card page**
+<br>
+[Link to issue](https://github.com/zuri-training/Proj-CC_gen-Team-124/issues/90)
+<br>
+[Link to merged PR](https://github.com/zuri-training/Proj-CC_gen-Team-124/pull/97)
+
+<hr>
 
 ### Here is a [link](https://github.com/zuri-training/Proj-CC_gen-Team-124/commits?author=VictoriaAde) to every commit through out the Project Phase
