@@ -71,8 +71,14 @@ copyCardLinkBtn.addEventListener('click', copyLinkToClipboard);
 
 const shareBtn = document.getElementById('share-btn');
 
-const shareModal = document.getElementById('share-modal');
+const shareModal = document.getElementById('share-container');
 const shareModalCloseBtn = document.getElementById('share-modal-close-btn');
 
-shareBtn.addEventListener('click', () => shareModal.classList.add('share-modal--show'));
-shareModalCloseBtn.addEventListener('click', () => shareModal.classList.remove('share-modal--show'));
+shareBtn.addEventListener('click', () => shareModal.classList.add('share-con--show'));
+shareModalCloseBtn.addEventListener('click', () => shareModal.classList.remove('share-con--show'));
+
+document.body.addEventListener("click", (event) => {
+  if (event.target.id == 'share-container') {
+    shareModal.classList.remove("share-con--show");
+  }
+});
