@@ -1,5 +1,6 @@
 @import url("base.css");
-@import url("global.css");
+@import url("comment-overlay.css");
+@import url('./share-overlay.css');
 @import url("profile.css");
 
 body {
@@ -184,7 +185,7 @@ button {
   margin: 10px;
   cursor: pointer;
 }
-.btn-download__all:hover{
+.btn-download__all:hover {
   background-color: var(--primary);
 }
 .btn-download__all h4 {
