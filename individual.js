@@ -57,3 +57,28 @@ window.addEventListener("click", (event) => {
     commentModal.classList.remove("showCommentModal");
   }
 });
+
+
+// Share overlay - copy link
+const cardLinkInput = document.getElementById('card-link');
+const copyCardLinkBtn = document.getElementById('card-link-btn');
+
+const copyLinkToClipboard = async () => {
+  await navigator.clipboard.writeText(cardLinkInput.value);
+}
+
+copyCardLinkBtn.addEventListener('click', copyLinkToClipboard);
+
+const shareBtn = document.getElementById('share-btn');
+
+const shareModal = document.getElementById('share-container');
+const shareModalCloseBtn = document.getElementById('share-modal-close-btn');
+
+shareBtn.addEventListener('click', () => shareModal.classList.add('share-con--show'));
+shareModalCloseBtn.addEventListener('click', () => shareModal.classList.remove('share-con--show'));
+
+document.body.addEventListener("click", (event) => {
+  if (event.target.id == 'share-container') {
+    shareModal.classList.remove("share-con--show");
+  }
+});
