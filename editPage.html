@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edit Profile</title>
-    <link rel="stylesheet" href="./editPage.css">
+    <link rel="stylesheet" href="./editPage.css" />
   </head>
   <body>
     <div class="nav-div">
@@ -15,22 +15,26 @@
             class="nav_logo"
             src="./assets/Icons/Layer 3.svg"
             alt="Credard logo"
-        /></a>
-
+          />
+        </a>
         <nav class="nav_menu">
           <ul class="nav_list">
             <li>
               <a class="nav_link" href="./how-it-works.html">How it works</a>
             </li>
-            <li><a class="nav_link" href="#">Library</a></li>
+            <li><a class="nav_link" href="./library.html">Library</a></li>
             <li><a class="nav_link" href="./team.html">The team</a></li>
             <li><a class="nav_link" href="./contactUs.html">Contact us</a></li>
           </ul>
         </nav>
       </div>
       <div class="nav_right">
-        <a class="bookmark" href=""><img src="./assets/Icons/Bookmark.svg"></a>
-        <a class="person" href=""><img src="./assets/Icons/Person.svg"></a>
+        <a class="bookmark" href="./saved-designs.html"
+          ><img src="./assets/Icons/Bookmark.svg"
+        /></a>
+        <a class="person" href="./profile.html"
+          ><img src="./assets/Icons/Person.svg"
+        /></a>
       </div>
       <button id="hamburger-btn" class="nav_btn">
         <img src="./assets/Icons/menu - ham.svg" alt="" />
@@ -42,7 +46,7 @@
           <li>
             <a class="ham_link" href="./how-it-works.html">How it works</a>
           </li>
-          <li><a class="ham_link" href="#">Library</a></li>
+          <li><a class="ham_link" href="./library.html">Library</a></li>
           <li>
             <a class="ham_link" href="./team.html">The team</a>
           </li>
@@ -52,37 +56,46 @@
     </div>
 
     <main class="edit">
-        <div class="edit_bar">
-            <div class="edit_profileImage">
-                <img class="image" src="./assets/images/profilePicture.svg" alt="Profile Picture">
-                <button><a href="">Edit image &nbsp; <img src="./assets/Icons/edit-pen.svg" alt=""></a></button>
-            </div>
+      <div class="edit_bar">
+        <div class="edit_profileImage">
+          <img
+            class="image"
+            src="./assets/images/profilePicture.webp"
+            alt="Profile Picture"
+          />
+
+          <button>
+            <a href=""
+              >Edit image &nbsp; <img src="./assets/Icons/edit-pen.svg" alt=""
+            /></a>
+          </button>
+        </div>
+      </div>
+
+      <form action="">
+        <div class="edit_username">
+          <label for="username">Change Username</label><br />
+          <input type="text" id="username" />
         </div>
 
-        <form action="">
-            <div class="edit_username">
-                <label for="username">Change Username</label><br>
-                <input type="text" id="username">
-            </div>
+        <p>Change your Password</p>
 
-            <P>Change your Password</P>
+        <div class="edit_password">
+          <label for="password">Enter new password</label><br />
+          <input type="password" class="password" /> <br />
 
-            <div class="edit_password">
-                <label for="password">Enter new password</label><br>
-                <input type="password" class="password" >  <br>
-                
-                <label for="password">Enter new password</label><br>
-                <input type="password" class="password">
-            </div>
+          <label for="password">Enter new password</label><br />
+          <input type="password" class="password" />
+        </div>
 
-            <div class="edit-button">
-                <button class="edit-button_save"><a href="">Save Changes</a></button><br>
-                <button class="edit-button_back"><a href="">Back to profile</a></button>
-            </div>
-
-            
-            
-        </form>
+        <div class="edit-button">
+          <button class="edit-button_save"><a href="">Save Changes</a></button
+          ><br />
+          <button class="edit-button_back">
+            <a href="./profile.html">Back to profile</a>
+          </button>
+        </div>
+      </form>
     </main>
 
     <footer class="footer">
@@ -111,7 +124,9 @@
                 <a class="footer_link" href="./library.html">View Library</a>
               </li>
               <li>
-                <a class="footer_link" href="./saved-designs.html">Saved Designs</a>
+                <a class="footer_link" href="./saved-designs.html"
+                  >Saved Designs</a
+                >
               </li>
             </ul>
           </nav>
