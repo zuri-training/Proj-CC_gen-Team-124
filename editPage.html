@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="./editPage.css">
+  </head>
+  <body>
+    <div class="nav-div">
+      <div class="nav_left">
+        <a href="./index.html">
+          <img
+            class="nav_logo"
+            src="./assets/Icons/Layer 3.svg"
+            alt="Credard logo"
+        /></a>
+
+        <nav class="nav_menu">
+          <ul class="nav_list">
+            <li>
+              <a class="nav_link" href="./how-it-works.html">How it works</a>
+            </li>
+            <li><a class="nav_link" href="#">Library</a></li>
+            <li><a class="nav_link" href="./team.html">The team</a></li>
+            <li><a class="nav_link" href="./contactUs.html">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav_right">
+        <a class="bookmark" href=""><img src="./assets/Icons/Bookmark.svg"></a>
+        <a class="person" href=""><img src="./assets/Icons/Person.svg"></a>
+      </div>
+      <button id="hamburger-btn" class="nav_btn">
+        <img src="./assets/Icons/menu - ham.svg" alt="" />
+      </button>
+    </div>
+    <div class="nav_hamburger-menu">
+      <nav id="hamburger-menu" class="ham_menu hide">
+        <ul>
+          <li>
+            <a class="ham_link" href="./how-it-works.html">How it works</a>
+          </li>
+          <li><a class="ham_link" href="#">Library</a></li>
+          <li>
+            <a class="ham_link" href="./team.html">The team</a>
+          </li>
+          <li><a class="ham_link" href="./contactUs.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="edit">
+        <div class="edit_bar">
+            <div class="edit_profileImage">
+                <img class="image" src="./assets/images/profilePicture.svg" alt="Profile Picture">
+                <button><a href="">Edit image &nbsp; <img src="./assets/Icons/edit-pen.svg" alt=""></a></button>
+            </div>
+        </div>
+
+        <form action="">
+            <div class="edit_username">
+                <label for="username">Change Username</label><br>
+                <input type="text" id="username">
+            </div>
+
+            <P>Change your Password</P>
+
+            <div class="edit_password">
+                <label for="password">Enter new password</label><br>
+                <input type="password" class="password" >  <br>
+                
+                <label for="password">Enter new password</label><br>
+                <input type="password" class="password">
+            </div>
+
+            <div class="edit-button">
+                <button class="edit-button_save"><a href="">Save Changes</a></button><br>
+                <button class="edit-button_back"><a href="">Back to profile</a></button>
+            </div>
+
+            
+            
+        </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_top">
+        <div>
+          <img
+            href="./index.html"
+            src="./assets/Icons/Group 44.svg"
+            alt="Logo"
+          />
+        </div>
+
+        <div class="footer_links">
+          <nav>
+            <h3 class="footer_heading">Support</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="./contactUs.html">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h3 class="footer_heading">Library</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="./library.html">View Library</a>
+              </li>
+              <li>
+                <a class="footer_link" href="./saved-designs.html">Saved Designs</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h3 class="footer_heading">Company</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="./team.html">Meet the Team</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr class="footer_hr" />
+      <div class="footer_bottom">
+        <p class="footer_copyright">© Credard Inc. 2022</p>
+        <div class="social">
+          <p>Follow us:</p>
+          <nav>
+            <ul class="social_link">
+              <li>
+                <a href="#" title="Twitter"
+                  ><img src="./assets/Icons/Twitter.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="Facebook"
+                  ><img src="./assets/Icons/Facebook.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="LinkedIn"
+                  ><img src="./assets/Icons/Linked in.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="Instagram"
+                  ><img src="./assets/Icons/Instagram.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./hamburger.js" defer></script>
+  </body>
+</html>
