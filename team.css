@@ -17,7 +17,7 @@ body {
 .team-page__header__container {
   width: 100%;
   height: 100%;
-  background-color: #310057;
+  background-color: rgba(87, 43, 146, 0.65);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,6 @@ body {
 .team-page__body {
   width: 100%;
   margin-top: 3.125rem;
-  margin-bottom: 3.125rem;
 }
 .team-page__body__container {
   width: 100%;
@@ -48,7 +47,7 @@ body {
   column-gap: 0.125rem;
 }
 .member-profile {
-  width: 15.625rem;
+  width: 12.625rem;
   height: 15.625rem;
   box-shadow: 0px 0px 2.30769px 1.53846px rgba(87, 43, 146, 0.2);
   border-radius: 0.3125rem;
@@ -58,34 +57,40 @@ body {
   margin: 0.3125rem auto;
   padding-top: 1.5625rem;
   padding-bottom: 0.3125rem;
+  text-align: center;
 }
 .member-profile__img {
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100vw;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  object-fit: stretch;
+}
+.img__rotate{
+  transform: rotate(90deg);
+}
+.img__rotate-180{
+  transform: rotate(270deg);
+}
+.member-profile__author{
+  margin-top: 5px;
 }
 .member-profile__author h4 {
   font-size: 1rem;
   font-weight: 800;
 }
-.member-profile__author span {
-  display: flex;
-  margin-left: 1.25rem;
-  margin-bottom: 1.5625rem;
-}
-.member-profile__author img {
-  height: 0.625rem;
-  padding-right: 0.1875rem;
-}
 .member-profile__author p {
-  margin-top: -0.3125rem;
-  border-left: 0.270192px solid var(--black);
-  padding-left: 0.1875rem;
-  font-size: 0.75em;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 .member-profile__social-media {
   width: 60%;
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .member-profile__social-media img {
   width: 1.5625rem;
@@ -94,9 +99,6 @@ body {
 @media (min-width: 425px) {
   .team-page__body__container {
     grid-template-columns: auto auto;
-  }
-  .member-profile {
-    width: 90%;
   }
 }
 @media (min-width: 768px) {
@@ -115,7 +117,7 @@ body {
     row-gap: 3.75rem;
   }
   .member-profile {
-    width: 13.75rem;
+    width: 11.75rem;
   }
 }
 @media (min-width: 1024px) {
@@ -140,20 +142,21 @@ body {
     margin: 0 auto;
   }
   .member-profile {
-    width: 17.5rem;
-    height: 18.125rem;
+    width: 14.5rem;
+    height: 19.125rem;
   }
   .member-profile__img {
-    width: 6.25rem;
-    height: 6.25rem;
-    margin-bottom: 1.25rem;
+    width: 7.25rem;
+    height: 7.25rem;
+    margin-bottom: 0.7rem;
+    object-fit: cover;
   }
   .member-profile__author h4 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
   }
   .member-profile__author span {
-    margin-left: 1.875rem;
+    margin-left: 0.75rem;
     margin-top: 0.875rem;
   }
   .member-profile__author img {
@@ -161,7 +164,6 @@ body {
     padding-right: 0.4375rem;
   }
   .member-profile__author p {
-    margin-top: -4px;
     font-size: 1rem;
     font-weight: 500;
     padding-left: 0.4375rem;
@@ -173,7 +175,7 @@ body {
 }
 @media (min-width: 1200px) {
   .member-profile {
-    width: 20.3125rem;
+    width: 17.3125rem;
     height: 21.875rem;
   }
   .member-profile__img {

@@ -28,7 +28,7 @@
             <li>
               <a class="nav_link" href="./how-it-works.html">How it works</a>
             </li>
-            <li><a class="nav_link" href="#">Library</a></li>
+            <li><a class="nav_link" href="./library.html">Library</a></li>
             <li><a class="nav_link" href="./team.html">The team</a></li>
             <li><a class="nav_link" href="./contactUs.html">Contact us</a></li>
           </ul>
@@ -50,7 +50,7 @@
       <nav id="hamburger-menu" class="ham_menu hide">
         <ul>
           <li><a class="ham_link" href="#">How it works</a></li>
-          <li><a class="ham_link" href="#">Library</a></li>
+          <li><a class="ham_link" href="./library.html">Library</a></li>
           <li>
             <a class="ham_link" href="./team.html">The team</a>
           </li>
@@ -133,7 +133,7 @@
               <p class="user-info-name">Designlover 123</p>
             </div>
             <div class="user-info__btns">
-              <button>
+              <button id="openCommentModal">
                 <img src="./assets/Icons/comment-white.svg" alt="" />
                 <p>Comment</p>
               </button>
@@ -147,9 +147,105 @@
               </button>
             </div>
           </div>
+
+          <!-- comment modal overlay -->
+          <section class="comments-con" id="commentModal">
+            <div class="comments">
+              <header class="comments_header">
+                <h2 class="comments_heading">Comments</h2>
+                <button id="closeCommentModal">
+                  <img src="./assets/Icons/Frame 27.svg" alt="Close icon" />
+                </button>
+              </header>
+              <form>
+                <div class="textarea-wrapper">
+                  <textarea
+                    class="comments_textarea"
+                    name="comment"
+                    id="comment"
+                    cols="30"
+                    placeholder="Add comment"
+                  ></textarea>
+                  <button class="textarea_send">
+                    <img src="./assets/Icons/Vector.svg" alt="" />
+                  </button>
+                  <button class="textarea_react">
+                    <img src="./assets/Icons/send-icon.svg" alt="" />
+                  </button>
+                </div>
+              </form>
+              <article class="comment">
+                <figure class="comment_figure">
+                  <img src="./assets/Icons/Person.svg" alt="" />
+                  <figcaption class="comment_author">
+                    Valerie Houston
+                  </figcaption>
+                </figure>
+                <p class="comment_text">This is quite beautiful. I like it.</p>
+                <div class="comment_bottom">
+                  <button>
+                    <img src="./assets/Icons/Vector.svg" alt="" />
+                  </button>
+                  <button class="react">
+                    <figure class="react_figure">
+                      <img
+                        class="react_img"
+                        src="./assets/Icons/Group 50.svg"
+                        alt=""
+                      />
+                      <figcaption>6</figcaption>
+                    </figure>
+                  </button>
+                  <button class="reply-btn">Reply</button>
+                  <small class="comment_time">2 hours ago</small>
+                </div>
+              </article>
+              <article class="comment">
+                <figure class="comment_figure">
+                  <img src="./assets/Icons/Person.svg" alt="" />
+                  <figcaption class="comment_author">
+                    Akintomi Mariam
+                  </figcaption>
+                </figure>
+                <p class="comment_text">
+                  I really like the design of this card. The fact that I can
+                  change the color makes me really glad .
+                </p>
+                <div class="comment_bottom">
+                  <button>
+                    <img src="./assets/Icons/Vector.svg" alt="" />
+                  </button>
+                  <button class="react">
+                    <figure class="react_figure">
+                      <img
+                        class="react_img"
+                        src="./assets/Icons/Group 50.svg"
+                        alt=""
+                      />
+                      <figcaption>10</figcaption>
+                    </figure>
+                  </button>
+                  <button class="react">
+                    <figure class="react_figure">
+                      <img
+                        class="react_img"
+                        src="./assets/Icons/Heart.svg"
+                        alt=""
+                      />
+                      <figcaption>2</figcaption>
+                    </figure>
+                  </button>
+                  <button class="reply-btn">Reply</button>
+                  <small class="comment_time">3 days ago</small>
+                </div>
+              </article>
+            </div>
+          </section>
         </div>
         <div class="main-content__container__download-btns">
-          <p>Download code, image or zip file with all formats</p>
+          <p class="download-text">
+            Download code, image or zip file with all formats
+          </p>
           <button class="btn-download-format" onclick="myFunction(this)">
             Pick download format
             <img
@@ -162,9 +258,34 @@
             class="main-content__container__download-btns__btn"
             id="pick-format__dropdown"
           >
-            <button>Download Code Sample</button>
-            <button>Download Image</button>
-            <button class="btn-download-format__btn-all">Download All</button>
+            <p class="file">FILE TYPE</p>
+            <div class="btn-format">
+              <p class="file__type">SVG</p>
+              <p class="file__size">4.83mb</p>
+            </div>
+            <div class="btn-format">
+              <p class="file__type">JPG</p>
+              <p class="file__size">3.67mb</p>
+            </div>
+            <div class="btn-format">
+              <p class="file__type">PDF</p>
+              <p class="file__size">3.42mb</p>
+            </div>
+            <div class="btn-format">
+              <p class="file__type">PNG</p>
+              <p class="file__size">2.10mb</p>
+            </div>
+            <div class="btn-format">
+              <p class="file__type">Code</p>
+              <p class="file__size">1.25mb</p>
+            </div>
+            <hr />
+            <div class="btn-download__all">
+              <h4>DOWNLOAD ZIP</h4>
+              <p>
+                This folder contains all file types available for the asset.
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 @import url("base.css");
-@import url("global.css");
+@import url("comment-overlay.css");
 @import url("profile.css");
 
 body {
@@ -29,7 +29,7 @@ button {
   margin-bottom: 20px;
 }
 .saved-design__one {
-  background-image: url(./assets/images/card-design-7.webp);
+  background-image: url(./assets/images/saved-card-4.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -61,7 +61,7 @@ button {
   background-size: cover;
 }
 .saved-design__six {
-  background-image: url(./assets/images/card-design-9.webp);
+  background-image: url(./assets/images/saved-card-9.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -114,12 +114,16 @@ button {
   height: 3rem;
   text-align: center;
   border-radius: 0.5rem;
-  width: 100%;
+  width: 90%;
 }
-.main-content__container__download-btns p {
+.main-content__container__download-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content__container__download-btns .download-text {
   display: block;
   font-size: 0.8rem;
-  color: var(--dark-purple);
   font-weight: 600;
   margin-top: 30px;
   margin-bottom: 10px;
@@ -138,18 +142,62 @@ button {
   margin-left: 5px;
   margin-top: 0px;
 }
-.main-content__container__download-btns__btn button {
-  margin-bottom: 20px;
-  color: var(--dark-purple);
-  border: solid 2px var(--dark-purple);
-  height: 3rem;
-  text-align: center;
-  border-radius: 0.5rem;
+.main-content__container__download-btns__btn {
+  background: #e6d9f8;
+  width: 90%;
+  padding: 5px 0;
+  margin: 0 auto;
 }
-.main-content__container__download-btns__btn .btn-download-format__btn-all {
-  background-color: var(--dark-purple);
-  color: var(--white);
+.main-content__container__download-btns__btn .file {
+  font-weight: 500;
+  font-size: 15.8057px;
+  line-height: 10px;
+  color: var(--gray);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
+.main-content__container__download-btns__btn .btn-format {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.main-content__container__download-btns__btn .btn-format:hover {
+  background-color: var(--primary);
+}
+
+.btn-format .file__type {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 32px;
+  padding-left: 10px;
+}
+.btn-format .file__size {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  padding-right: 10px;
+}
+.btn-download__all {
+  margin: 10px;
+  cursor: pointer;
+}
+.btn-download__all:hover {
+  background-color: var(--primary);
+}
+.btn-download__all h4 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 32px;
+}
+.btn-download__all p {
+  font-weight: 500;
+  font-size: 14.8057px;
+  line-height: 16px;
+}
+
 .related-cards {
   margin-left: 5px;
   margin-right: 5px;
