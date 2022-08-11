@@ -61,6 +61,7 @@ nav {
   padding: 20px;
   box-shadow: 0 0 5pt 0.5pt #d3d3d3;
 }
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -144,5 +145,23 @@ nav ul li img {
   }
   .opt-do_not_have {
     display: none;
+  }
+  .row {
+    padding: 0 2rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  button {
+    min-width: 250px;
+  }
+  input {
+    min-width: 250px;
+  }
+  .register_button {
+    padding: 12px 0;
+    min-width: 120px;
   }
 }
