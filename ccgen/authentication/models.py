@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# class UserDetails(models.Model):
+#     username = models.CharField()
+#     email = models.CharField()
+#     password = models.CharField()
