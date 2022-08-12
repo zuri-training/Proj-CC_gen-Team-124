@@ -4,4 +4,4 @@
 
 - [Login and Register Page Authentication](https://github.com/zuri-training/Proj-CC_gen-Team-124/issues/74)
 
-- [Linked Webpages](https://github.com/zuri-training/Backend-Proj-CC_gen-Team-124/pull/2/commits/4a77169d9a0a88345682da5fe408464418203c69)
+- [Linked Webpages](https://github.com/zuri-training/Proj-CC_gen-Team-124/commit/a4208751478481f2619fce1dc75de6e30ac8874b)
