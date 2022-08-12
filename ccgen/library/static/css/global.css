@@ -118,7 +118,7 @@ nav {
 /* Footer */
 .footer {
   margin-top: 3rem;
-  background: url(../images/Group-117.webp) no-repeat;
+  background: url("../images/Group-117.webp") no-repeat;
   background-size: cover;
   color: var(--light-gray);
 

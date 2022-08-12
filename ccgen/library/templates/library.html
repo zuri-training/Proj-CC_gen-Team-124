@@ -34,7 +34,7 @@
         <a href="{% url 'saved-designs' %}" class="nav_login">
           <img src="{% static 'Icons/Bookmark.svg' %}" alt="bookmark" />
         </a>
-        <a href="{% url 'profile' %}" class="nav_register">
+        <a href="{% url 'profile' %}" class="nav_login">
           <img src="{% static 'Icons/profile.svg' %}" alt="profile" />
         </a>
         <form action="{% url 'logout' %}" method="POST">
@@ -380,7 +380,8 @@
             </div>
           </a>
           {% endif %}
-          <a href="./individual.html">
+          {% if request.user.is_authenticated %}
+          <a href="{% url 'individual-card' %}">
             <div class="single-card-design">
               <div class="single-card-design__individual saved-design__three">
                 <div class="hover-container">
@@ -449,7 +450,79 @@
               </div>
             </div>
           </a>
-          <a href="./individual.html">
+          {% else %}
+          <a href="{% url 'login' %}">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__three">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="{% static 'Icons/arrow-left-white.svg' %}"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__three"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="{% static 'Icons/card-chip.svg' %}" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="{% static 'Icons/logo-icon-credard.svg' %}"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__three"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="{% static 'Icons/logo-icon-credard.svg' %}"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          {% endif %}
+          {% if request.user.is_authenticated %}
+          <a href="{% url 'individual-card' %}">
             <div class="single-card-design">
               <div class="single-card-design__individual saved-design__four">
                 <div class="hover-container">
@@ -518,7 +591,79 @@
               </div>
             </div>
           </a>
-          <a href="./individual.html">
+          {% else %}
+          <a href="{% url 'login' %}">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__four">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="{% static 'Icons/arrow-left-white.svg' %}"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__four"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="{% static 'Icons/card-chip.svg' %}" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="{% static 'Icons/logo-icon-credard.svg' %}"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__four"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="{% static 'Icons/logo-icon-credard.svg' %}"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          {% endif %}
+          {% if request.user.is_authenticated %}
+          <a href="{% url 'individual-card' %}">
             <div class="single-card-design">
               <div class="single-card-design__individual saved-design__five">
                 <div class="hover-container">
@@ -587,6 +732,77 @@
               </div>
             </div>
           </a>
+          {% else %}
+          <a href="{% url 'login' %}">
+            <div class="single-card-design">
+              <div class="single-card-design__individual saved-design__five">
+                <div class="hover-container">
+                  <p>View more details</p>
+                  <img
+                    src="{% static 'Icons/arrow-left-white.svg' %}"
+                    alt="arrow-right"
+                  />
+                </div>
+                <div class="saved-card">
+                  <div
+                    class="card-design card__container--front saved-design__five"
+                  >
+                    <div class="card-design__expires">
+                      <p>Expires</p>
+                      <h2>01/22</h2>
+                    </div>
+                    <div class="card-design__chip">
+                      <img src="{% static 'Icons/card-chip.svg' %}" alt="card-chip" />
+                    </div>
+                    <div class="card-design__number">
+                      <p>8945 5768 5887 34522</p>
+                    </div>
+                    <div class="card-design__end">
+                      <div class="card-design__author">
+                        <p>Design Lovers</p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="{% static 'Icons/logo-icon-credard.svg' %}"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-design card__container--back saved-design__five"
+                  >
+                    <div class="card__container__backContent">
+                      <div class="backContent--black"></div>
+                      <div class="backContent--white">
+                        <div class="backContent--white__logo"></div>
+                        <span>
+                          <p>Cvv</p>
+                        </span>
+                      </div>
+                      <div class="backContent__design-end">
+                        <div class="backContent__about">
+                          <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nis.
+                          </p>
+                        </div>
+                        <div class="card-design__logo">
+                          <img
+                            src="{% static 'Icons/logo-icon-credard.svg' %}"
+                            alt="card-design-logo"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          {% endif %}
           <a href="./individual.html">
             <div class="single-card-design">
               <div class="single-card-design__individual saved-design__six">
