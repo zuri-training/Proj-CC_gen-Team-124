@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Edit Profile{% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/editPage.css' %}">
+{% endblock styles %}
+
+{% block content %}
+  <body>
+    <div class="nav-div">
+      <div class="nav_left">
+        <a href="{% url 'index' %}">
+          <img
+            class="nav_logo"
+            src="{% static 'Icons/Layer 3.svg' %}"
+            alt="Credard logo"
+        /></a>
+
+        <nav class="nav_menu">
+          <ul class="nav_list">
+            <li>
+              <a class="nav_link" href="{% url 'how-it-works' %}">How it works</a>
+            </li>
+            <li><a class="nav_link" href="{% url 'library' %}">Library</a></li>
+            <li><a class="nav_link" href="{% url 'our-team' %}">The team</a></li>
+            <li><a class="nav_link" href="{% url 'contact-us' %}">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav_right">
+        <a href="{% url 'saved-designs' %}" class="nav_login">
+          <img src="{% static 'Icons/Bookmark.svg' %}" alt="bookmark" />
+        </a>
+        <a href="{% url 'profile' %}" class="nav_register">
+          <img src="{% static 'Icons/profile.svg' %}" alt="profile" />
+        </a>
+        <form action="{% url 'logout' %}" method="POST">
+          {% csrf_token %}
+          <a href="{% url 'logout' %}"><button class="nav_register" type="submit">Logout</button></a>
+        </form>
+      </div>
+      <button id="hamburger-btn" class="nav_btn">
+        <img src="{% static 'Icons/menu - ham.svg' %}" alt="" />
+      </button>
+    </div>
+    <div class="nav_hamburger-menu">
+      <nav id="hamburger-menu" class="ham_menu hide">
+        <ul>
+          <li>
+            <a class="ham_link" href="{% url 'how-it-works' %}">How it works</a>
+          </li>
+          <li><a class="ham_link" href="{% url 'library' %}">Library</a></li>
+          <li>
+            <a class="ham_link" href="{% url 'our-team' %}">The team</a>
+          </li>
+          <li><a class="ham_link" href="{% url 'contact-us' %}">Contact us</a></li>
+        </ul>
+        <div class="ham_auth">
+          <a href="{% url 'saved-designs' %}" class="ham_link"> Saved Designs </a>
+          <a href="{% url 'profile' %}" class="ham_link"> Profile </a>
+          <form action="{% url 'logout' %}" method="POST">
+            {% csrf_token %}
+            <a class="ham_link" href="{% url 'logout' %}">Logout</a>
+          </form>  
+        </div>
+      </nav>
+    </div>
+
+    <main class="edit">
+        <div class="edit_bar">
+            <div class="edit_profileImage">
+                <img class="image" src="{% static 'images/profilePicture.svg' %}" alt="Profile Picture">
+                <button><a href="">Edit image &nbsp; <img src="{% static 'Icons/edit-pen.svg' %}" alt=""></a></button>
+            </div>
+        </div>
+
+        <form action="">
+            <div class="edit_username">
+                <label for="username">Change Username</label><br>
+                <input type="text" id="username">
+            </div>
+
+            <P>Change your Password</P>
+
+            <div class="edit_password">
+                <label for="password">Enter new password</label><br>
+                <input type="password" class="password" >  <br>
+                
+                <label for="password">Enter new password</label><br>
+                <input type="password" class="password">
+            </div>
+
+            <div class="edit-button">
+                <button class="edit-button_save"><a href="">Save Changes</a></button><br>
+                <button class="edit-button_back"><a href="">Back to profile</a></button>
+            </div>
+
+            
+            
+        </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_top">
+        <div>
+          <img
+            href="{% url 'index' %}"
+            src="{% static 'Icons/Group 44.svg' %}"
+            alt="Logo"
+          />
+        </div>
+
+        <div class="footer_links">
+          <nav>
+            <h3 class="footer_heading">Support</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="{% url 'contact-us' %}">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h3 class="footer_heading">Library</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="{% url 'library' %}">View Library</a>
+              </li>
+              <li>
+                <a class="footer_link" href="{% url 'saved-designs' %}">Saved Designs</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h3 class="footer_heading">Company</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="{% url 'our-team' %}">Meet the Team</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr class="footer_hr" />
+      <div class="footer_bottom">
+        <p class="footer_copyright">© Credard Inc. 2022</p>
+        <div class="social">
+          <p>Follow us:</p>
+          <nav>
+            <ul class="social_link">
+              <li>
+                <a href="#" title="Twitter"
+                  ><img src="{% static 'Icons/Twitter.svg' %}" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="Facebook"
+                  ><img src="{% static 'Icons/Facebook.svg' %}" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="LinkedIn"
+                  ><img src="{% static 'Icons/Linked in.svg' %}" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="Instagram"
+                  ><img src="{% static 'Icons/Instagram.svg' %}" alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+{% endblock content %}
+
+{% block scripts %}
+<script src="{% static 'js/hamburger.js' %}" defer></script>
+{% endblock scripts %}

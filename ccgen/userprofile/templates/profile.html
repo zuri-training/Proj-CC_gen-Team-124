@@ -27,13 +27,17 @@
           </ul>
         </nav>
       </div>
-      <div class="nav_right nav-right_auth">
-        <a href="{% url 'saved-designs' %}" class="nav_link">
+      <div class="nav_right">
+        <a href="{% url 'saved-designs' %}" class="nav_login">
           <img src="{% static 'Icons/Bookmark.svg' %}" alt="bookmark" />
         </a>
-        <a href="{% url 'profile' %}" class="nav_link">
+        <a href="{% url 'profile' %}" class="nav_register">
           <img src="{% static 'Icons/profile.svg' %}" alt="profile" />
         </a>
+        <form action="{% url 'logout' %}" method="POST">
+          {% csrf_token %}
+          <a href="{% url 'logout' %}"><button class="nav_register" type="submit">Logout</button></a>
+        </form>
       </div>
       <button id="hamburger-btn" class="nav_btn">
         <img src="{% static 'Icons/menu - ham.svg' %}" alt="" />
@@ -50,8 +54,12 @@
           <li><a class="ham_link" href="{% url 'contact-us' %}">Contact us</a></li>
         </ul>
         <div class="ham_auth">
-          <a href="{% url 'saved-designs' %}" class="ham_link"> Bookmark </a>
+          <a href="{% url 'saved-designs' %}" class="ham_link"> Saved Designs </a>
           <a href="{% url 'profile' %}" class="ham_link"> Profile </a>
+          <form action="{% url 'logout' %}" method="POST">
+            {% csrf_token %}
+            <a class="ham_link" href="{% url 'logout' %}">Logout</a>
+          </form> 
         </div>
       </nav>
     </div>
@@ -60,7 +68,9 @@
       <section class="profile__body__about">
         <div class="profile-about">
           <div class="profile-about__btn">
-            <button>Edit profile</button>
+            <a href="{% url 'edit' %}">
+              <button>Edit profile</button>
+            </a>
           </div>
           <div class="profile-about__name">
             <img
@@ -91,11 +101,13 @@
       <section class="profile__saved-designs">
         <div class="saved-design__viewAll">
           <p>Saved Designs</p>
-          <button>View All</button>
+          <a href="{% url 'saved-designs' %}">
+            <button>View All</button>
+          </a>
         </div>
 
         <div class="saved-design__collections">
-            <a href="./individual.html">
+            <a href="{% url 'individual-card' %}">
                 <div class="single-card-design">
                     <div class="single-card-design__individual saved-design__one">
                         <div class="hover-container">
@@ -161,7 +173,7 @@
                     </div>
                   </div>
             </a>
-            <a href="./individual.html">
+            <a href="{% url 'individual-card' %}">
                 <div class="single-card-design">
                     <div class="single-card-design__individual saved-design__two">
                         <div class="hover-container">
@@ -227,7 +239,7 @@
                     </div>
                   </div>
             </a>
-            <a href="./individual.html">
+            <a href="{% url 'individual-card' %}">
                 <div class="single-card-design">
                     <div class="single-card-design__individual saved-design__three">
                         <div class="hover-container">
@@ -293,7 +305,7 @@
                     </div>
                   </div>
             </a>
-            <a href="./individual.html">
+            <a href="{% url 'individual-card' %}">
                 <div class="single-card-design">
                     <div class="single-card-design__individual saved-design__four">
                         <div class="hover-container">
@@ -359,7 +371,7 @@
                     </div>
                   </div>
             </a>
-            <a href="./individual.html">
+            <a href="{% url 'individual-card' %}">
                 <div class="single-card-design">
                     <div class="single-card-design__individual saved-design__five">
                         <div class="hover-container">
@@ -425,7 +437,7 @@
                     </div>
                   </div>
             </a>
-            <a href="./individual.html">
+            <a href="{% url 'individual-card' %}">
                 <div class="single-card-design">
                     <div class="single-card-design__individual saved-design__six">
                         <div class="hover-container">

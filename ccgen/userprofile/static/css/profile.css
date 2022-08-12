@@ -154,7 +154,7 @@ body {
   background-size: cover;
 }
 .saved-design__five {
-  background-image: url("../images/profile-card-design-5.webp");
+  background-image: url(../images/profile-card-design-5.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -274,7 +274,7 @@ body {
 }
 .backContent--white .backContent--white__logo {
   width: 80%;
-  background-image: url("../images/back-card-logo.webp");
+  background-image: url(../images/back-card-logo.webp);
 }
 .backContent--white span p {
   text-transform: uppercase;

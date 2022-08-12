@@ -37,6 +37,10 @@ href="{% static 'homepage/css/index.css' %}"
     <a href="{% url 'profile' %}" class="nav_register">
       <img src="{% static 'Icons/profile.svg' %}" alt="profile" />
     </a>
+    <form action="{% url 'logout' %}" method="POST">
+      {% csrf_token %}
+      <a href="{% url 'logout' %}"><button class="nav_register" type="submit">Logout</button></a>
+    </form>
   </div>
   {% else %}
   <div class="nav_right">
@@ -62,6 +66,10 @@ href="{% static 'homepage/css/index.css' %}"
     <div class="ham_auth">
       <a href="{% url 'saved-designs' %}" class="ham_link"> Saved Designs </a>
       <a href="{% url 'profile' %}" class="ham_link"> Profile </a>
+      <form action="{% url 'logout' %}" method="POST">
+        {% csrf_token %}
+        <a class="ham_link" href="{% url 'logout' %}">Logout</a>
+      </form> 
     </div>
     {% else %}
     <ul>

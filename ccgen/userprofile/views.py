@@ -5,3 +5,6 @@ def profile(request):
 
 def saved_designs(request):
     return render(request, "saved-designs.html")
+
+def edit_profile(request):
+    return render(request, "editPage.html")

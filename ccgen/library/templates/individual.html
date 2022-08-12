@@ -28,17 +28,18 @@
           </ul>
         </nav>
       </div>
-      <div class="nav_right nav-right_auth">
-        <a href="{% url 'saved-designs' %}" class="nav_link">
+      <div class="nav_right">
+        <a href="{% url 'saved-designs' %}" class="nav_login">
           <img src="{% static 'Icons/Bookmark.svg' %}" alt="bookmark" />
         </a>
-        <a href="{% url 'profile' %}" class="nav_link">
+        <a href="{% url 'profile' %}" class="nav_register">
           <img src="{% static 'Icons/profile.svg' %}" alt="profile" />
         </a>
+        <form action="{% url 'logout' %}" method="POST">
+          {% csrf_token %}
+          <a href="{% url 'logout' %}"><button class="nav_register" type="submit">Logout</button></a>
+        </form>
       </div>
-      <button id="hamburger-btn" class="nav_btn">
-        <img src="{% static 'Icons/menu - ham.svg' %}" alt="" />
-      </button>
     </div>
     <div class="nav_hamburger-menu">
       <nav id="hamburger-menu" class="ham_menu hide">
@@ -53,6 +54,10 @@
         <div class="ham_auth">
           <a href="{% url 'saved-designs' %}" class="ham_link"> Saved Designs </a>
           <a href="{% url 'profile' %}" class="ham_link"> Profile </a>
+          <form action="{% url 'logout' %}" method="POST">
+            {% csrf_token %}
+            <a class="ham_link" href="{% url 'logout' %}">Logout</a>
+          </form>
         </div>
       </nav>
     </div>

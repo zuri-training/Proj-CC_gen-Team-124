@@ -16,11 +16,10 @@
             alt="Credard logo"
           />
         </a>
+
         <nav class="nav_menu">
           <ul class="nav_list">
-            <li>
-              <a class="nav_link" href="{% url 'how-it-works' %}">How it Works</a>
-            </li>
+            <li><a class="nav_link" href="{% url 'how-it-works' %}">How it Works</a></li>
             <li><a class="nav_link" href="{% url 'library' %}">Library</a></li>
             <li><a class="nav_link" href="{% url 'our-team' %}">The team</a></li>
             <li><a class="nav_link" href="{% url 'contact-us' %}">Contact us</a></li>
@@ -29,12 +28,16 @@
       </div>
       {% if request.user.is_authenticated %}
       <div class="nav_right">
-        <a href="{% url 'saved-designs' %}" class="nav_link">
+        <a href="{% url 'saved-designs' %}" class="nav_login">
           <img src="{% static 'Icons/Bookmark.svg' %}" alt="bookmark" />
         </a>
-        <a href="{% url 'profile' %}" class="nav_link">
+        <a href="{% url 'profile' %}" class="nav_register">
           <img src="{% static 'Icons/profile.svg' %}" alt="profile" />
         </a>
+        <form action="{% url 'logout' %}" method="POST">
+          {% csrf_token %}
+          <a href="{% url 'logout' %}"><button class="nav_register" type="submit">Logout</button></a>
+        </form>
       </div>
       {% else %}
       <div class="nav_right">
@@ -60,6 +63,10 @@
         <div class="ham_auth">
           <a href="{% url 'saved-designs' %}" class="ham_link"> Saved Designs </a>
           <a href="{% url 'profile' %}" class="ham_link"> Profile </a>
+          <form action="{% url 'logout' %}" method="POST">
+            {% csrf_token %}
+            <a class="ham_link" href="{% url 'logout' %}">Logout</a>
+          </form>  
         </div>
         {% else %}
         <ul>
@@ -87,337 +94,313 @@
       <div class="team-page__body__container">
         <div class="member-profile">
           <img
-            src="{% static 'images/team-profile.webp' %}"
+            src="{% static 'images/Victoria.webp' %}"
             alt="member-profile"
             class="member-profile__img"
           />
           <div class="member-profile__author">
-            <h4>NAME SURNAME</h4>
-            <span>
-              <img
-                src="{% static 'Icons/logo-with-credard.svg' %}"
-                alt="credard-logo"
-              />
-              <p>Role</p>
-            </span>
+            <h4>Victoria Adedayo</h4>
+            <p class="author__role">Frontend Developer</p>
           </div>
           <div class="member-profile__social-media">
-            <a href="#">
-              <img src="{% static 'Icons/member-Facebook.svg' %}" alt="facebook" />
+            <a href="https://twitter.com/Vickish11">
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
             </a>
-            <a href="#">
-              <img src="{% static 'Icons/linkedIn.svg' %}" alt="linkedin" />
+            <a href="https://www.instagram.com/vickish11/">
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
             </a>
-            <a href="#">
-              <img src="{% static 'Icons/member-Instagram.svg' %}" alt="instagram" />
+            <a href="https://www.linkedin.com/in/victoria-adedayo/">
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
             </a>
           </div>
         </div>
         <div class="member-profile">
           <img
-            src="{% static 'images/team-profile.webp' %}"
+            src="{% static 'images/Ayobami-Tunwase.webp' %}"
             alt="member-profile"
             class="member-profile__img"
           />
           <div class="member-profile__author">
-            <h4>NAME SURNAME</h4>
-            <span>
-              <img
-                src="{% static 'Icons/logo-with-credard.svg' %}"
-                alt="credard-logo"
-              />
-              <p>Role</p>
-            </span>
+            <h4>Ayobami Tunwase</h4>
+            <p class="author__role">Frontend Developer</p>
           </div>
           <div class="member-profile__social-media">
-            <a href="#">
-              <img src="{% static 'Icons/member-Facebook.svg' %}" alt="facebook" />
+            <a href="https://twitter.com/TunwaseAyobami">
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
             </a>
             <a href="#">
-              <img src="{% static 'Icons/linkedIn.svg' %}" alt="linkedin" />
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
             </a>
-            <a href="#">
-              <img src="{% static 'Icons/member-Instagram.svg' %}" alt="instagram" />
+            <a href="https://www.linkedin.com/in/ayobami-tunwase-83a21b202">
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
             </a>
           </div>
         </div>
         <div class="member-profile">
           <img
-            src="{% static 'images/team-profile.webp' %}"
+            src="{% static 'images/Obinna-Anya.webp' %}"
             alt="member-profile"
             class="member-profile__img"
           />
           <div class="member-profile__author">
-            <h4>NAME SURNAME</h4>
-            <span>
-              <img
-                src="{% static 'Icons/logo-with-credard.svg' %}"
-                alt="credard-logo"
-              />
-              <p>Role</p>
-            </span>
+            <h4>Obinna Anya</h4>
+            <p class="author__role">Backend Developer</p>
           </div>
           <div class="member-profile__social-media">
-            <a href="#">
-              <img src="{% static 'Icons/member-Facebook.svg' %}" alt="facebook" />
+            <a href="https://twitter.com/SidKay_">
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
             </a>
             <a href="#">
-              <img src="{% static 'Icons/linkedIn.svg' %}" alt="linkedin" />
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
             </a>
-            <a href="#">
-              <img src="{% static 'Icons/member-Instagram.svg' %}" alt="instagram" />
+            <a href="https://www.linkedin.com/in/sidneyanya/">
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
             </a>
           </div>
         </div>
         <div class="member-profile">
           <img
-            src="{% static 'images/team-profile.webp' %}"
+            src="{% static 'images/Diligwe.webp' %}"
             alt="member-profile"
             class="member-profile__img"
           />
           <div class="member-profile__author">
-            <h4>NAME SURNAME</h4>
-            <span>
-              <img
-                src="{% static 'Icons/logo-with-credard.svg' %}"
-                alt="credard-logo"
-              />
-              <p>Role</p>
-            </span>
+            <h4>Ezedigwe Odilichukwu</h4>
+            <p class="author__role">Frontend Developer</p>
           </div>
           <div class="member-profile__social-media">
             <a href="#">
-              <img src="{% static 'Icons/member-Facebook.svg' %}" alt="facebook" />
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
             </a>
             <a href="#">
-              <img src="{% static 'Icons/linkedIn.svg' %}" alt="linkedin" />
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
             </a>
             <a href="#">
-              <img src="{% static 'Icons/member-Instagram.svg' %}" alt="instagram" />
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
             </a>
           </div>
         </div>
         <div class="member-profile">
           <img
-            src="{% static 'images/team-profile.webp' %}"
+            src="{% static 'images/Muhiz-Akanni.webp' %}"
             alt="member-profile"
             class="member-profile__img"
           />
           <div class="member-profile__author">
-            <h4>NAME SURNAME</h4>
-            <span>
-              <img
-                src="{% static 'Icons/logo-with-credard.svg' %}"
-                alt="credard-logo"
-              />
-              <p>Role</p>
-            </span>
+            <h4>Muhiz Akanni</h4>
+            <p class="author__role">Frontend Developer</p>
           </div>
           <div class="member-profile__social-media">
-            <a href="#">
-              <img src="{% static 'Icons/member-Facebook.svg' %}" alt="facebook" />
+            <a href="https://twitter.com/muhiz_akanni?s=09">
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
             </a>
-            <a href="#">
-              <img src="{% static 'Icons/linkedIn.svg' %}" alt="linkedin" />
+            <a href="https://www.instagram.com/muakone3">
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
             </a>
-            <a href="#">
-              <img src="{% static 'Icons/member-Instagram.svg' %}" alt="instagram" />
+            <a href="https://www.linkedin.com/in/muhiz-akanni-46595b21a">
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
             </a>
           </div>
         </div>
         <div class="member-profile">
           <img
-            src="{% static 'images/team-profile.webp' %}"
+            src="{% static 'images/Samson-Olumoye.webp' %}"
             alt="member-profile"
             class="member-profile__img"
           />
           <div class="member-profile__author">
-            <h4>NAME SURNAME</h4>
-            <span>
-              <img
-                src="{% static 'Icons/logo-with-credard.svg' %}"
-                alt="credard-logo"
-              />
-              <p>Role</p>
-            </span>
+            <h4>Samson Olumoye</h4>
+            <p class="author__role">Product Designer</p>
           </div>
           <div class="member-profile__social-media">
-            <a href="#">
-              <img src="{% static 'Icons/member-Facebook.svg' %}" alt="facebook" />
+            <a
+              href="https://twitter.com/samsonolumoye?t=UxVYQ2OEgPdWjiTSfehr_g&s=09"
+            >
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
             </a>
             <a href="#">
-              <img src="{% static 'Icons/linkedIn.svg' %}" alt="linkedin" />
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
             </a>
-            <a href="#">
-              <img src="{% static 'Icons/member-Instagram.svg' %}" alt="instagram" />
+            <a href="https://www.linkedin.com/in/samson-olumoye-437041197">
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
             </a>
           </div>
         </div>
         <div class="member-profile">
           <img
-            src="{% static 'images/team-profile.webp' %}"
+            src="{% static 'images/AJAGBOYE-DANIEL.webp' %}"
             alt="member-profile"
             class="member-profile__img"
           />
           <div class="member-profile__author">
-            <h4>NAME SURNAME</h4>
-            <span>
-              <img
-                src="{% static 'Icons/logo-with-credard.svg' %}"
-                alt="credard-logo"
-              />
-              <p>Role</p>
-            </span>
+            <h4>Ajagboye Daniel</h4>
+            <p class="author__role">Product Designer</p>
           </div>
           <div class="member-profile__social-media">
-            <a href="#">
-              <img src="{% static 'Icons/member-Facebook.svg' %}" alt="facebook" />
+            <a href="https://twitter.com/ajagboye_daniel">
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
             </a>
             <a href="#">
-              <img src="{% static 'Icons/linkedIn.svg' %}" alt="linkedin" />
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
             </a>
-            <a href="#">
-              <img src="{% static 'Icons/member-Instagram.svg' %}" alt="instagram" />
+            <a href="https://www.linkedin.com/in/ajagboye-daniel-5621b7195">
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
             </a>
           </div>
         </div>
         <div class="member-profile">
           <img
-            src="{% static 'images/team-profile.webp' %}"
+            src="{% static 'images/Rejoice-Atasie.webp' %}"
             alt="member-profile"
             class="member-profile__img"
           />
           <div class="member-profile__author">
-            <h4>NAME SURNAME</h4>
-            <span>
-              <img
-                src="{% static 'Icons/logo-with-credard.svg' %}"
-                alt="credard-logo"
-              />
-              <p>Role</p>
-            </span>
+            <h4>Atasie Rejoice</h4>
+            <p class="author__role">Product Designer</p>
           </div>
           <div class="member-profile__social-media">
             <a href="#">
-              <img src="{% static 'Icons/member-Facebook.svg' %}" alt="facebook" />
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
             </a>
             <a href="#">
-              <img src="{% static 'Icons/linkedIn.svg' %}" alt="linkedin" />
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
             </a>
             <a href="#">
-              <img src="{% static 'Icons/member-Instagram.svg' %}" alt="instagram" />
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
             </a>
           </div>
         </div>
         <div class="member-profile">
           <img
-            src="{% static 'images/team-profile.webp' %}"
+            src="{% static 'images/Amatullahi-Mohammed.webp' %}"
             alt="member-profile"
             class="member-profile__img"
           />
           <div class="member-profile__author">
-            <h4>NAME SURNAME</h4>
-            <span>
-              <img
-                src="{% static 'Icons/logo-with-credard.svg' %}"
-                alt="credard-logo"
-              />
-              <p>Role</p>
-            </span>
+            <h4>Mohammed Amatullahi</h4>
+            <p class="author__role">Product Designer</p>
           </div>
           <div class="member-profile__social-media">
-            <a href="#">
-              <img src="{% static 'Icons/member-Facebook.svg' %}" alt="facebook" />
+            <a href="https://twitter.com/amaatuu">
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
             </a>
-            <a href="#">
-              <img src="{% static 'Icons/linkedIn.svg' %}" alt="linkedin" />
+            <a href="https://www.instagram.com/_amatuuu_/">
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
             </a>
-            <a href="#">
-              <img src="{% static 'Icons/member-Instagram.svg' %}" alt="instagram" />
+            <a
+              href="https://www.linkedin.com/in/amatullahi-mohammed-85353a236/"
+            >
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
             </a>
           </div>
         </div>
         <div class="member-profile">
           <img
-            src="{% static 'images/team-profile.webp' %}"
+            src="{% static 'images/Letticia.webp' %}"
             alt="member-profile"
             class="member-profile__img"
           />
           <div class="member-profile__author">
-            <h4>NAME SURNAME</h4>
-            <span>
-              <img
-                src="{% static 'Icons/logo-with-credard.svg' %}"
-                alt="credard-logo"
-              />
-              <p>Role</p>
-            </span>
+            <h4>Letticia Adimoha</h4>
+            <p class="author__role">Frontend Developer</p>
           </div>
           <div class="member-profile__social-media">
-            <a href="#">
-              <img src="{% static 'Icons/member-Facebook.svg' %}" alt="facebook" />
+            <a href="https://twitter.com/AsaAdimoha">
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
+            </a>
+            <a href="https://www.instagram.com/adimohaletticia/">
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
             </a>
             <a href="#">
-              <img src="{% static 'Icons/linkedIn.svg' %}" alt="linkedin" />
-            </a>
-            <a href="#">
-              <img src="{% static 'Icons/member-Instagram.svg' %}" alt="instagram" />
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
             </a>
           </div>
         </div>
         <div class="member-profile">
           <img
-            src="{% static 'images/team-profile.webp' %}"
+            src="{% static 'images/Ola-White.webp' %}"
             alt="member-profile"
             class="member-profile__img"
           />
           <div class="member-profile__author">
-            <h4>NAME SURNAME</h4>
-            <span>
-              <img
-                src="{% static 'Icons/logo-with-credard.svg' %}"
-                alt="credard-logo"
-              />
-              <p>Role</p>
-            </span>
+            <h4>Ola White Y.</h4>
+            <p class="author__role">Frontend Developer</p>
           </div>
           <div class="member-profile__social-media">
-            <a href="#">
-              <img src="{% static 'Icons/member-Facebook.svg' %}" alt="facebook" />
+            <a href="https://twitter.com/olawhite">
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
+            </a>
+            <a href="https://instagram.com/olawhite">
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
             </a>
             <a href="#">
-              <img src="{% static 'Icons/linkedIn.svg' %}" alt="linkedin" />
-            </a>
-            <a href="#">
-              <img src="{% static 'Icons/member-Instagram.svg' %}" alt="instagram" />
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
             </a>
           </div>
         </div>
         <div class="member-profile">
           <img
-            src="{% static 'images/team-profile.webp' %}"
+            src="{% static 'images/maggie.webp' %}"
             alt="member-profile"
             class="member-profile__img"
           />
           <div class="member-profile__author">
-            <h4>NAME SURNAME</h4>
-            <span>
-              <img
-                src="{% static 'Icons/logo-with-credard.svg' %}"
-                alt="credard-logo"
-              />
-              <p>Role</p>
-            </span>
+            <h4>Margaret Kagundu</h4>
+            <p class="author__role">Product Designer</p>
           </div>
           <div class="member-profile__social-media">
             <a href="#">
-              <img src="{% static 'Icons/member-Facebook.svg' %}" alt="facebook" />
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
             </a>
             <a href="#">
-              <img src="{% static 'Icons/linkedIn.svg' %}" alt="linkedin" />
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
             </a>
             <a href="#">
-              <img src="{% static 'Icons/member-Instagram.svg' %}" alt="instagram" />
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+        <div class="member-profile">
+          <img
+            src="{% static 'images/Joshua-Ayoola.webp' %}"
+            alt="member-profile"
+            class="member-profile__img"
+          />
+          <div class="member-profile__author">
+            <h4>Joshua Ayoola</h4>
+            <p class="author__role">Product Designer</p>
+          </div>
+          <div class="member-profile__social-media">
+            <a href="https://twitter.com/temilayoola1">
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
+            </a>
+            <a href="https://www.instagram.com/jehohshua/">
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
+            </a>
+            <a href="https://www.linkedin.com/in/jehohshua/">
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+        <div class="member-profile">
+          <img
+            src="{% static 'images/Akinfoyewa.webp' %}"
+            alt="member-profile"
+            class="member-profile__img"
+          />
+          <div class="member-profile__author">
+            <h4>Akinfoyewa Iyanuoluwa</h4>
+            <p class="author__role">Product Designer</p>
+          </div>
+          <div class="member-profile__social-media">
+            <a href="#">
+              <img src="{% static 'Icons/Twitter.svg' %}" alt="Twitter" />
+            </a>
+            <a href="#">
+              <img src="{% static 'Icons/team-Instagram.svg' %}" alt="Instagram" />
+            </a>
+            <a href="#">
+              <img src="{% static 'Icons/team-Linkedin.svg' %}" alt="LinkedIn" />
             </a>
           </div>
         </div>
@@ -426,12 +409,11 @@
     <footer class="footer">
       <div class="footer_top">
         <div>
-          <a href="{% url 'index' %}">
-            <img
-              src="{% static 'Icons/Group 44.svg' %}"
-              alt="Logo"
-            />
-          </a>
+          <img
+            href="{% url 'index' %}"
+            src="{% static 'Icons/Group 44.svg' %}"
+            alt="Logo"
+          />
         </div>
 
         <div class="footer_links">
