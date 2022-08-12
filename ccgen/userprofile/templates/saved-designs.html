@@ -1,0 +1,703 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Saved Designs{% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/saved-designs.css' %}" />
+{% endblock styles %}
+
+{% block content %}
+  <body class="profile">
+    <div class="nav-div">
+      <div class="nav_left">
+        <img
+          class="nav_logo"
+          src="{% static 'Icons/Layer 3.svg' %}"
+          alt="Credard logo"
+        />
+        <nav class="nav_menu">
+          <ul class="nav_list">
+            <li>
+              <a class="nav_link" href="{% url 'how-it-works' %}">How it Works</a>
+            </li>
+            <li><a class="nav_link" href="{% url 'library' %}">Library</a></li>
+            <li><a class="nav_link" href="{% url 'our-team' %}">The team</a></li>
+            <li><a class="nav_link" href="{% url 'contact-us' %}">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+      {% if request.user.is_authenticated %}
+      <div class="nav_right">
+        <a href="{% url 'saved-designs' %}" class="nav_link">
+          <img src="{% static 'Icons/Bookmark.svg' %}" alt="bookmark" />
+        </a>
+        <a href="{% url 'profile' %}" class="nav_link">
+          <img src="{% static 'Icons/profile.svg' %}" alt="profile" />
+        </a>
+      </div>
+      {% else %}
+      <div class="nav_right">
+        <a class="nav_login" href="{% url 'login' %}">Login</a>
+        <a class="nav_register" href="{% url 'register' %}">Register</a>
+      </div>
+      {% endif %}
+      <button id="hamburger-btn" class="nav_btn">
+        <img src="{% static 'Icons/menu - ham.svg' %}" alt="" />
+      </button>
+    </div>
+    <div class="nav_hamburger-menu">
+      <nav id="hamburger-menu" class="ham_menu hide">
+        {% if request.user.is_authenticated %}
+        <ul>
+          <li><a class="ham_link" href="{% url 'how-it-works' %}">How it works</a></li>
+          <li><a class="ham_link" href="{% url 'library' %}">Library</a></li>
+          <li>
+            <a class="ham_link" href="{% url 'our-team' %}">The team</a>
+          </li>
+          <li><a class="ham_link" href="{% url 'contact-us' %}">Contact us</a></li>
+        </ul>
+        <div class="ham_auth">
+          <a href="{% url 'saved-designs' %}" class="ham_link"> Saved Designs </a>
+          <a href="{% url 'profile' %}" class="ham_link"> Profile </a>
+        </div>
+        {% else %}
+        <ul>
+          <li><a class="ham_link" href="{% url 'how-it-works' %}">Features</a></li>
+          <li><a class="ham_link" href="{% url 'library' %}">Library</a></li>
+          <li>
+            <a class="ham_link" href="{% url 'our-team' %}">The team</a>
+          </li>
+          <li><a class="ham_link" href="{% url 'contact-us' %}">Contact us</a></li>
+        </ul>
+        <div class="ham_btns">
+          <a class="ham_login" href="{% url 'login' %}">Login</a>
+          <a class="ham_register" href="{% url 'register' %}">Register</a>
+        </div>
+        {% endif %}
+      </nav>
+    </div>
+    <header class="page_header">
+      <div class="page_header_title">Saved Card Designs</div>
+    </header>
+    <main class="body_section">
+      <section class="profile__saved-designs">
+        <div class="saved-design_title">
+          <h2>Saved Designs</h2>
+        </div>
+        <div class="saved-design__collections">
+          <div class="single-card-design">
+            <div class="single-card-design__individual saved-design__one">
+              <div class="saved-card">
+                <div
+                  class="card-design card__container--front saved-design__one"
+                >
+                  <div class="card-design__expires">
+                    <p>Expires</p>
+                    <h2>01/22</h2>
+                  </div>
+                  <div class="card-design__chip">
+                    <img src="{% static 'Icons/card-chip.svg' %}" alt="card-chip" />
+                  </div>
+                  <div class="card-design__number">
+                    <p>8945 5768 5887 34522</p>
+                  </div>
+                  <div class="card-design__end">
+                    <div class="card-design__author">
+                      <p>Design Lovers</p>
+                    </div>
+                    <div class="card-design__logo">
+                      <img
+                        src="{% static 'Icons/logo-icon-credard.svg' %}"
+                        alt="card-design-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-design card__container--back saved-design__one"
+                >
+                  <div class="card__container__backContent">
+                    <div class="backContent--black"></div>
+                    <div class="backContent--white">
+                      <div class="backContent--white__logo"></div>
+                      <span>
+                        <p>Cvv</p>
+                      </span>
+                    </div>
+                    <div class="backContent__design-end">
+                      <div class="backContent__about">
+                        <p>
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nis.
+                        </p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="{% static 'Icons/logo-icon-credard.svg' %}"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="single-card-design">
+            <div class="single-card-design__individual saved-design__two">
+              <div class="saved-card">
+                <div
+                  class="card-design card__container--front saved-design__two"
+                >
+                  <div class="card-design__expires">
+                    <p>Expires</p>
+                    <h2>01/22</h2>
+                  </div>
+                  <div class="card-design__chip">
+                    <img src="{% static 'Icons/card-chip.svg' %}" alt="card-chip" />
+                  </div>
+                  <div class="card-design__number">
+                    <p>8945 5768 5887 34522</p>
+                  </div>
+                  <div class="card-design__end">
+                    <div class="card-design__author">
+                      <p>Design Lovers</p>
+                    </div>
+                    <div class="card-design__logo">
+                      <img
+                        src="{% static 'Icons/logo-icon-credard.svg' %}"
+                        alt="card-design-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-design card__container--back saved-design__two"
+                >
+                  <div class="card__container__backContent">
+                    <div class="backContent--black"></div>
+                    <div class="backContent--white">
+                      <div class="backContent--white__logo"></div>
+                      <span>
+                        <p>Cvv</p>
+                      </span>
+                    </div>
+                    <div class="backContent__design-end">
+                      <div class="backContent__about">
+                        <p>
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nis.
+                        </p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="{% static 'Icons/logo-icon-credard.svg' %}"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="single-card-design">
+            <div class="single-card-design__individual saved-design__three">
+              <div class="saved-card">
+                <div
+                  class="card-design card__container--front saved-design__three"
+                >
+                  <div class="card-design__expires">
+                    <p>Expires</p>
+                    <h2>01/22</h2>
+                  </div>
+                  <div class="card-design__chip">
+                    <img src="{% static 'Icons/card-chip.svg' %}" alt="card-chip" />
+                  </div>
+                  <div class="card-design__number">
+                    <p>8945 5768 5887 34522</p>
+                  </div>
+                  <div class="card-design__end">
+                    <div class="card-design__author">
+                      <p>Design Lovers</p>
+                    </div>
+                    <div class="card-design__logo">
+                      <img
+                        src="{% static 'Icons/logo-Icon-credard.svg' %}"
+                        alt="card-design-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-design card__container--back saved-design__three"
+                >
+                  <div class="card__container__backContent">
+                    <div class="backContent--black"></div>
+                    <div class="backContent--white">
+                      <div class="backContent--white__logo"></div>
+                      <span>
+                        <p>Cvv</p>
+                      </span>
+                    </div>
+                    <div class="backContent__design-end">
+                      <div class="backContent__about">
+                        <p>
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nis.
+                        </p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="{% static 'Icons/logo-icon-credard.svg' %}"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="single-card-design">
+            <div class="single-card-design__individual saved-design__four">
+              <div class="saved-card">
+                <div
+                  class="card-design card__container--front saved-design__four"
+                >
+                  <div class="card-design__expires">
+                    <p>Expires</p>
+                    <h2>01/22</h2>
+                  </div>
+                  <div class="card-design__chip">
+                    <img src="{% static 'Icons/card-chip.svg' %}" alt="card-chip" />
+                  </div>
+                  <div class="card-design__number">
+                    <p>8945 5768 5887 34522</p>
+                  </div>
+                  <div class="card-design__end">
+                    <div class="card-design__author">
+                      <p>Design Lovers</p>
+                    </div>
+                    <div class="card-design__logo">
+                      <img
+                        src="{% static 'Icons/logo-icon-credard.svg' %}"
+                        alt="card-design-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-design card__container--back saved-design__four"
+                >
+                  <div class="card__container__backContent">
+                    <div class="backContent--black"></div>
+                    <div class="backContent--white">
+                      <div class="backContent--white__logo"></div>
+                      <span>
+                        <p>Cvv</p>
+                      </span>
+                    </div>
+                    <div class="backContent__design-end">
+                      <div class="backContent__about">
+                        <p>
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nis.
+                        </p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="{% static 'Icons/logo-icon-credard.svg' %}"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="single-card-design">
+            <div class="single-card-design__individual saved-design__five">
+              <div class="saved-card">
+                <div
+                  class="card-design card__container--front saved-design__five"
+                >
+                  <div class="card-design__expires">
+                    <p>Expires</p>
+                    <h2>01/22</h2>
+                  </div>
+                  <div class="card-design__chip">
+                    <img src="{% static 'Icons/card-chip.svg' %}" alt="card-chip" />
+                  </div>
+                  <div class="card-design__number">
+                    <p>8945 5768 5887 34522</p>
+                  </div>
+                  <div class="card-design__end">
+                    <div class="card-design__author">
+                      <p>Design Lovers</p>
+                    </div>
+                    <div class="card-design__logo">
+                      <img
+                        src="{% static 'Icons/logo-icon-credard.svg' %}"
+                        alt="card-design-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-design card__container--back saved-design__five"
+                >
+                  <div class="card__container__backContent">
+                    <div class="backContent--black"></div>
+                    <div class="backContent--white">
+                      <div class="backContent--white__logo"></div>
+                      <span>
+                        <p>Cvv</p>
+                      </span>
+                    </div>
+                    <div class="backContent__design-end">
+                      <div class="backContent__about">
+                        <p>
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nis.
+                        </p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="{% static 'Icons/logo-icon-credard.svg' %}"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="single-card-design">
+            <div class="single-card-design__individual saved-design__six">
+              <div class="saved-card">
+                <div
+                  class="card-design card__container--front saved-design__six"
+                >
+                  <div class="card-design__expires">
+                    <p>Expires</p>
+                    <h2>01/22</h2>
+                  </div>
+                  <div class="card-design__chip">
+                    <img src="{% static 'Icons/card-chip.svg' %}" alt="card-chip" />
+                  </div>
+                  <div class="card-design__number">
+                    <p>8945 5768 5887 34522</p>
+                  </div>
+                  <div class="card-design__end">
+                    <div class="card-design__author">
+                      <p>Design Lovers</p>
+                    </div>
+                    <div class="card-design__logo">
+                      <img
+                        src="{% static 'Icons/logo-icon-credard.svg' %}"
+                        alt="card-design-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-design card__container--back saved-design__six"
+                >
+                  <div class="card__container__backContent">
+                    <div class="backContent--black"></div>
+                    <div class="backContent--white">
+                      <div class="backContent--white__logo"></div>
+                      <span>
+                        <p>Cvv</p>
+                      </span>
+                    </div>
+                    <div class="backContent__design-end">
+                      <div class="backContent__about">
+                        <p>
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nis.
+                        </p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="{% static 'Icons/logo-icon-credard.svg' %}"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="single-card-design">
+            <div class="single-card-design__individual saved-design__seven">
+              <div class="saved-card">
+                <div
+                  class="card-design card__container--front saved-design__seven"
+                >
+                  <div class="card-design__expires">
+                    <p>Expires</p>
+                    <h2>01/22</h2>
+                  </div>
+                  <div class="card-design__chip">
+                    <img src="{% static 'Icons/card-chip.svg' %}" alt="card-chip" />
+                  </div>
+                  <div class="card-design__number">
+                    <p>8945 5768 5887 34522</p>
+                  </div>
+                  <div class="card-design__end">
+                    <div class="card-design__author">
+                      <p>Design Lovers</p>
+                    </div>
+                    <div class="card-design__logo">
+                      <img
+                        src="{% static 'Icons/logo-icon-credard.svg' %}"
+                        alt="card-design-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-design card__container--back saved-design__seven"
+                >
+                  <div class="card__container__backContent">
+                    <div class="backContent--black"></div>
+                    <div class="backContent--white">
+                      <div class="backContent--white__logo"></div>
+                      <span>
+                        <p>Cvv</p>
+                      </span>
+                    </div>
+                    <div class="backContent__design-end">
+                      <div class="backContent__about">
+                        <p>
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nis.
+                        </p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="{% static 'Icons/logo-icon-credard.svg' %}"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="single-card-design">
+            <div class="single-card-design__individual saved-design__eight">
+              <div class="saved-card">
+                <div
+                  class="card-design card__container--front saved-design__eight"
+                >
+                  <div class="card-design__expires">
+                    <p>Expires</p>
+                    <h2>01/22</h2>
+                  </div>
+                  <div class="card-design__chip">
+                    <img src="{% static 'Icons/card-chip.svg' %}" alt="card-chip" />
+                  </div>
+                  <div class="card-design__number">
+                    <p>8945 5768 5887 34522</p>
+                  </div>
+                  <div class="card-design__end">
+                    <div class="card-design__author">
+                      <p>Design Lovers</p>
+                    </div>
+                    <div class="card-design__logo">
+                      <img
+                        src="{% static 'Icons/logo-icon-credard.svg' %}"
+                        alt="card-design-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-design card__container--back saved-design__eight"
+                >
+                  <div class="card__container__backContent">
+                    <div class="backContent--black"></div>
+                    <div class="backContent--white">
+                      <div class="backContent--white__logo"></div>
+                      <span>
+                        <p>Cvv</p>
+                      </span>
+                    </div>
+                    <div class="backContent__design-end">
+                      <div class="backContent__about">
+                        <p>
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nis.
+                        </p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="{% static 'Icons/logo-icon-credard.svg' %}"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="single-card-design">
+            <div class="single-card-design__individual saved-design__nine">
+              <div class="saved-card">
+                <div
+                  class="card-design card__container--front saved-design__nine"
+                >
+                  <div class="card-design__expires">
+                    <p>Expires</p>
+                    <h2>01/22</h2>
+                  </div>
+                  <div class="card-design__chip">
+                    <img src="{% static 'Icons/card-chip.svg' %}" alt="card-chip" />
+                  </div>
+                  <div class="card-design__number">
+                    <p>8945 5768 5887 34522</p>
+                  </div>
+                  <div class="card-design__end">
+                    <div class="card-design__author">
+                      <p>Design Lovers</p>
+                    </div>
+                    <div class="card-design__logo">
+                      <img
+                        src="{% static 'Icons/logo-icon-credard.svg' %}"
+                        alt="card-design-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-design card__container--back saved-design__nine"
+                >
+                  <div class="card__container__backContent">
+                    <div class="backContent--black"></div>
+                    <div class="backContent--white">
+                      <div class="backContent--white__logo"></div>
+                      <span>
+                        <p>Cvv</p>
+                      </span>
+                    </div>
+                    <div class="backContent__design-end">
+                      <div class="backContent__about">
+                        <p>
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nis.
+                        </p>
+                      </div>
+                      <div class="card-design__logo">
+                        <img
+                          src="{% static 'Icons/logo-icon-credard.svg' %}"
+                          alt="card-design-logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer_top">
+        <div>
+          <img src="{% static 'Icons/Group 44.svg' %}" alt="Logo" />
+        </div>
+
+        <div class="footer_links">
+          <nav>
+            <h3 class="footer_heading">Support</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="{% url 'contact-us' %}">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h3 class="footer_heading">Library</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="{% url 'library' %}">View Library</a>
+              </li>
+              <li>
+                <a class="footer_link" href="{% url 'saved-designs' %}">Saved Designs</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h3 class="footer_heading">Company</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="{% url 'our-team' %}">Meet the Team</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr class="footer_hr" />
+      <div class="footer_bottom">
+        <p class="footer_copyright">© Credard Inc. 2022</p>
+        <div class="social">
+          <p>Follow us:</p>
+          <nav>
+            <ul class="social_link">
+              <li>
+                <a href="#" title="Twitter"
+                  ><img src="{% static 'Icons/Twitter.svg' %}" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="Facebook"
+                  ><img src="{% static 'Icons/Facebook.svg' %}" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="LinkedIn"
+                  ><img src="{% static 'Icons/Linked in.svg' %}" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="Instagram"
+                  ><img src="{% static 'Icons/Instagram.svg' %}" alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+{% endblock content %}
+
+{% block scripts %}
+<script src="js/hamburger.js"></script>
+{% endblock scripts %}

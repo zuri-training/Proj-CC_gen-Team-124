@@ -1,0 +1,311 @@
+@import url("global.css");
+@import url("comment-overlay.css");
+@import url("profile.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Manrope", sans-serif;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.main-content__container {
+  margin: 30px 5px;
+  display: flex;
+  flex-direction: column;
+}
+.main-content__container__card-info-section {
+  display: flex;
+  flex-direction: column;
+}
+.single-card-design__individual {
+  width: 100%;
+  padding: 1.5rem 0;
+  margin-bottom: 20px;
+}
+.saved-design__one {
+  background-image: url(../images/saved-card-4.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.saved-design__two {
+  background: var(--black);
+}
+.saved-design__three {
+  background: linear-gradient(
+    68.44deg,
+    #ff5858 0%,
+    #ff6b6b 49.27%,
+    #ff7d7d 100%
+  );
+}
+.saved-design__four {
+  background: linear-gradient(
+    270deg,
+    #f9c823 0%,
+    #faa03c 33.65%,
+    #fb7855 66.98%,
+    #fc506e 100%
+  );
+}
+.saved-design__five {
+  background-image: url(../images/card-design-8.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.saved-design__six {
+  background-image: url(../images/saved-card-9.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.saved-design__seven {
+  background: linear-gradient(
+    68.44deg,
+    #95f9c3 0%,
+    #73c9ac 18.54%,
+    #509995 41.98%,
+    #2e687d 66.98%,
+    #0b3866 100%
+  );
+}
+.user-info {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.user-info__btns {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  color: var(--dark-purple);
+}
+.user-info__btns button p {
+  color: var(--dark-purple);
+  font-size: 1rem;
+}
+.user-info__img {
+  display: flex;
+  color: var(--dark-purple);
+  align-items: center;
+  margin: 20px 0;
+}
+.user-info__img img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100vw;
+  margin-left: 5px;
+  margin-right: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.btn-download-format {
+  display: block;
+  margin-bottom: 20px;
+  background-color: var(--dark-purple);
+  color: var(--white);
+  height: 3rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  width: 90%;
+}
+.main-content__container__download-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content__container__download-btns .download-text {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.main-content__container__download-btns__btn {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  display: none;
+}
+.show {
+  display: flex;
+}
+
+#show-arrow-up {
+  margin-left: 5px;
+  margin-top: 0px;
+}
+.main-content__container__download-btns__btn {
+  background: #e6d9f8;
+  width: 90%;
+  padding: 5px 0;
+  margin: 0 auto;
+}
+.main-content__container__download-btns__btn .file {
+  font-weight: 500;
+  font-size: 15.8057px;
+  line-height: 10px;
+  color: var(--gray);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.main-content__container__download-btns__btn .btn-format {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.main-content__container__download-btns__btn .btn-format:hover {
+  background-color: var(--primary);
+}
+
+.btn-format .file__type {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 32px;
+  padding-left: 10px;
+}
+.btn-format .file__size {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  padding-right: 10px;
+}
+.btn-download__all {
+  margin: 10px;
+  cursor: pointer;
+}
+.btn-download__all:hover {
+  background-color: var(--primary);
+}
+.btn-download__all h4 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 32px;
+}
+.btn-download__all p {
+  font-weight: 500;
+  font-size: 14.8057px;
+  line-height: 16px;
+}
+
+.related-cards {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.related-cards h4 {
+  font-size: 1.5rem;
+  color: var(--dark-purple);
+  margin-bottom: 10px;
+}
+.hover-container {
+  width: 97%;
+}
+
+@media (min-width: 425px) {
+  .main-content__container {
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .picked-card,
+  .related-cards {
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .user-info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-design__chip {
+    margin: 0.8rem 0 0.5rem 0.625rem;
+  }
+  .hover-container {
+    width: 25em;
+  }
+}
+@media (min-width: 768px) {
+  .main-content__container {
+    width: 100%;
+    flex-direction: row;
+    column-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  .related-cards {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  #show-arrow-up {
+    margin-left: 5px;
+    margin-top: 0px;
+  }
+  .hover-container {
+    width: 46.6%;
+  }
+}
+@media (min-width: 1024px) {
+  .main-content__container {
+    column-gap: 70px;
+  }
+  .picked-card {
+    width: 30em;
+  }
+  .single-card__picked {
+    height: 16rem;
+  }
+  .user-info {
+    flex-direction: row;
+  }
+  .user-info__btns {
+    column-gap: 20px;
+    margin-left: 14px;
+  }
+  .user-info__btns button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 7px;
+    color: var(--dark-purple);
+    border: solid 2px var(--dark-purple);
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 7px;
+  }
+  .card-design__chip {
+    margin: 0.8rem 0 -0.5rem 0.625rem;
+  }
+  .hover-container {
+    width: 47.5%;
+  }
+}
+@media (min-width: 1200px) {
+  .related-cards {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+  .saved-design__collections {
+    column-gap: 12px;
+  }
+  .hover-container {
+    width: 32.2%;
+  }
+}
+@media (min-width: 1240px) {
+  .related-cards {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}

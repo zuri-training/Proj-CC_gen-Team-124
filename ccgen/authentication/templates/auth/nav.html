@@ -1,0 +1,19 @@
+{% load static %}
+<nav>
+  <ul>
+    <li>
+      <a href="/"><img src="{% static 'images/logo.webp' %}" /></a>
+    </li>
+    <li style="float: right">
+      <div style="display: inline-flex">
+        {% if page == 'login' %}
+        <p style="padding: 0px 10px">Don't have an account?</p>
+        <a href="{% url 'register' %}" class="register_button">Register</a>
+        {% else %}
+        <p style="padding: 0px 10px">Already have an account?</p>
+        <a href="{% url 'login' %}" class="register_button">Login</a>
+        {% endif %}
+      </div>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Register {% endblock title %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/auth.css' %}" />
+{% endblock styles %}
+
+{% block content %}
+  {% include 'auth/nav.html' with page="register" %}
+
+  <div class="row">
+    <div class="col form-col">
+      <form method="POST">
+        {% csrf_token %}
+        <h2 class="text-center text-primary">Create Account</h2>
+        {% if error_message %}
+            <span style="display: block; color: red">{{ error_message }}</span>
+        {% endif %}
+        <!-- <button type="button" class="google_button" style="margin-top: 20px">
+          Continue with Google
+          <i class="fa fa-google"></i>
+        </button>
+        <p class="text-center text-primary">or</p> -->
+        <div class="input-group">
+          <label>Email Address</label>
+          <input type="email" name="email" />
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" name="password" />
+          <span toggle="#password-field" class="toggle-password"
+            ><img src="{% static 'images/Shape.svg' %}"
+          /></span>
+        </div>
+        <div class="input-group">
+          <label>Repeat Password</label>
+          <input type="password" name="confirm-password" />
+          <span toggle="#password-field" class="toggle-password">
+            <img src="{% static 'images/Shape.svg' %}"/>
+          </span>
+        </div>
+        <button type="submit" class="login_button">Create Account</button>
+      </form>
+    </div>
+    <div class="col img-col">
+      <img src="{% static 'images/rafiki-2.webp' %}" />
+    </div>
+  </div>
+{% endblock content %}

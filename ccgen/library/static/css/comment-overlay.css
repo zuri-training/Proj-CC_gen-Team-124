@@ -1,0 +1,157 @@
+@import url("base.css");
+
+/* General styles */
+* {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Comments */
+.comments-con {
+  display: none;
+
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.comments {
+  background: var(--white);
+  border: 1px solid var(--blue);
+  width: 90%;
+  max-width: 350px;
+  padding: 1.4em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.showCommentModal {
+  display: block;
+}
+
+.comments_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comments_heading {
+  color: var(--blue);
+  font-weight: 1.3rem;
+}
+
+.textarea-wrapper {
+  position: relative;
+}
+
+.comments_textarea {
+  border-radius: 0.25em;
+  box-shadow: 4px 4px 10px rgba(87, 43, 146, 0.25);
+  outline: none;
+  resize: none;
+  width: 100%;
+  padding: 1em;
+  padding-right: 7em;
+}
+
+.textarea_send {
+  position: absolute;
+  right: 5em;
+  top: 27.5%;
+}
+
+.textarea_react {
+  position: absolute;
+  right: 2em;
+  top: 27.5%;
+}
+
+.comment {
+  border-bottom: 1px solid var(--blue);
+  padding: 0.8em 0;
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.comment_figure {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+
+  margin: 1em 0;
+}
+
+.comment_author {
+  font-weight: 600;
+  font-size: calc(22 / 16 * 0.8rem);
+}
+
+.comment_text {
+  margin: 1em 0;
+  font-size: 0.8rem;
+}
+
+.comment_bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.react {
+  border: 1px solid var(--blue);
+  border-radius: 0.5em;
+  padding: 0.25em;
+}
+
+.react_figure {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.react_img {
+  width: 1em;
+}
+
+.reply-btn {
+  font-weight: 700;
+}
+
+.comment_time {
+  color: #00000080;
+}

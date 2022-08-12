@@ -1,0 +1,312 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} How it works{% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/how-it-works.css' %}" />
+{% endblock styles %}
+
+{% block content %}
+  <body>
+    <main>
+      <div class="nav-div">
+        <div class="nav_left">
+          <a href="{% url 'index' %}">
+            <img
+              class="nav_logo"
+              src="{% static 'Icons/Layer 3.svg' %}"
+              alt="Credard logo"
+            />
+          </a>
+
+          <nav class="nav_menu">
+            <ul class="nav_list">
+              <li>
+                <a class="nav_link" href="{% url 'how-it-works' %}">How It Works</a>
+              </li>
+              <li><a class="nav_link" href="{% url 'library' %}">Library</a></li>
+              <li><a class="nav_link" href="{% url 'our-team' %}">The team</a></li>
+              <li><a class="nav_link" href="{% url 'contact-us' %}">Contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav_right">
+          {% if request.user.is_authenticated %}
+          <div class="nav_right nav-right_auth">
+            <a href="{% url 'saved-designs' %}" class="nav_login">
+              <img src="{% static 'Icons/Bookmark.svg' %}" alt="bookmark" />
+            </a>
+            <a href="{% url 'profile' %}" class="nav_register">
+              <img src="{% static 'Icons/profile.svg' %}" alt="profile" />
+            </a>
+          </div>
+          <form action="{% url 'logout' %}" method="POST">
+            {% csrf_token %}
+            <a href="{% url 'logout' %}"><button class="nav_register" type="submit">Logout</button></a>
+          </form>
+          {% else %}
+          <a class="nav_login" href="{% url 'login' %}">Login</a>
+          <a class="nav_register" href="{% url 'register' %}">Register</a>
+          {% endif %}
+        </div>
+        <button id="hamburger-btn" class="nav_btn">
+          <img src="{% static 'Icons/menu - ham.svg' %}" alt="" />
+        </button>
+      </div>
+      <div class="nav_hamburger-menu">
+        <nav id="hamburger-menu" class="ham_menu hide">
+          <ul>
+            <li><a class="ham_link" href="{% url 'how-it-works' %}">How it Works</a></li>
+            <li><a class="ham_link" href="{% url 'library' %}">Library</a></li>
+            <li>
+              <a class="ham_link" href="{% url 'our-team' %}">The team</a>
+            </li>
+            <li><a class="ham_link" href="{% url 'contact-us' %}">Contact us</a></li>
+          </ul>
+          <div class="ham_btns">
+            {% if request.user.is_authenticated %}
+            <div class="nav_right nav-right_auth">
+              <a href="{% url 'saved-designs' %}" class="ham_login">
+                <img src="{% static 'Icons/Bookmark.svg' %}" alt="bookmark" />
+              </a>
+              <a href="{% url 'profile' %}" class="ham_register">
+                <img src="{% static 'Icons/profile.svg' %}" alt="profile" />
+              </a>
+            </div>
+            <form action="{% url 'logout' %}" method="POST">
+              {% csrf_token %}
+              <a href="{% url 'logout' %}"><button class="ham_register" type="submit">Logout</button></a>
+            </form>
+            {% else %}
+            <a class="ham_login" href="{% url 'login' %}">Login</a>
+            <a class="ham_register" href="{% url 'register' %}">Register</a>
+            {% endif %}
+          </div>
+        </nav>
+      </div>
+      <header>
+        <div class="how-it-works_title-bar1">
+          <h2>Help Center</h2>
+        </div>
+
+        <div class="how-it-works_title-bar2">
+          <div>
+            <h2>What do you want to do?</h2>
+            <ol>
+              <li>Create account</li>
+              <li>Explore our library of different credit card designs</li>
+              <li>Download credit card image for your own use</li>
+              <li>Download the code sample for a credit card design</li>
+            </ol>
+          </div>
+          <div class="how-it-works_form-con">
+            <form
+              class="how-it-works_title-bar2_form"
+              action="/action_page.php"
+            >
+              <input
+                type="text"
+                placeholder="Search here"
+                name=" credard search icon"
+              />
+              <button type="submit">
+                <img
+                  src="{% static 'Icons/search-icon.svg' %}"
+                  alt="search icon image"
+                />
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+      <div class="how-it-works_space_bar"></div>
+
+      <section class="how-it-works_body-top-bottom">
+        <div class="how-it-works_body-top-bottom_left">
+          <h3>Get authenticated</h3>
+          <br />
+          <p>
+            Authenticated users have full access to our library and are able to
+            view. download, comment and share our credit card design. Here’s how
+            to get authenticated.
+          </p>
+          <ol>
+            <li>
+              Check the top of the page at the navigation bar you’ll see two
+              buttons to the extreme right, click on the register button.
+            </li>
+            <li>You can also click <a href="">here</a>.</li>
+            <li>
+              Enter the few details you’ll be prompted to, or continue with
+              Google.
+            </li>
+          </ol>
+
+          <ul>
+            <li>Was this helpful? <a href="">Yes</a> or <a href="">No</a>.</li>
+            <li>
+              You can also give feedback or ask a question <a href="">here</a>.
+            </li>
+          </ul>
+        </div>
+        <div class="how-it-works_body-top-bottom_right">
+          <img
+            src="{% static 'images/How-it-works-lady-mobile login-amico.webp' %}"
+            alt="Get authenticated"
+          />
+        </div>
+      </section>
+      <section class="how-it-works_body-middle">
+        <div class="how-it-works_body-middle_left">
+          <img
+            src="{% static 'images/how-it=works-plain credit card-rafiki.webp' %}"
+            alt="Explore our library"
+          />
+        </div>
+        <div class="how-it-works_body-middle_right">
+          <h3>Explore credit card library</h3>
+          .
+          <br />
+          <p>
+            Credard allows you to explore our library of credit card designs
+            where you can view and download any design of your choice.
+          </p>
+          <ol>
+            <li>
+              Check the top of the page at the navigation bar, click on the
+              library button.
+            </li>
+            <li>From the homepage, you can also click on view our library.</li>
+            <li>You can also click <a href="">here</a></li>
+            .
+            <li>
+              When you see a design you like, click on it to engage more with
+              it.
+            </li>
+          </ol>
+          <ul>
+            <li>Was this helpful? <a href="">Yes</a> or <a href="">No</a></li>
+            <li>
+              You can also give feedback or ask a question <a href="">here</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="how-it-works_body-top-bottom">
+        <div class="how-it-works_body-top-bottom_left">
+          <h3>Download a credit card design image or code sample.</h3>
+          <br />
+          <p>
+            Our designs can be downloaded in all image formats such as jpg, svg,
+            png and pdf and you can also download the code sample, or a zip
+            folder
+          </p>
+          <ol>
+            <li>
+              When you click on a credit card image that you like, you’ll be
+              redirected to a page where you will see the option to download it
+              in the format of your choice.
+            </li>
+            <li>You can also click <a href="">here</a></li>
+            <li>
+              After clicking on the format type, it will be downloaded to your
+              local files.
+            </li>
+          </ol>
+          <ul>
+            <li>Was this helpful? <a href="">Yes</a> or <a href="">No</a></li>
+            <li>
+              You can also give feedback or ask a question <a href="">here</a>
+            </li>
+          </ul>
+        </div>
+        <div class="how-it-works_body-top-bottom_right">
+          <img
+            src="{% static 'images/how-it-works-download-amico.webp' %}"
+            alt="Download any format"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer_top">
+        <div>
+          <a href="{% url 'index' %}">
+            <img
+              src="{% static 'Icons/Group 44.svg' %}"
+              alt="Logo"
+            />
+          </a>
+        </div>
+
+        <div class="footer_links">
+          <nav>
+            <h3 class="footer_heading">Support</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="{% url 'contact-us' %}">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h3 class="footer_heading">Library</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="{% url 'library' %}">View Library</a>
+              </li>
+              <li>
+                {% if request.user.is_authenticated %}
+                <a class="footer_link" href="{% url 'saved-designs' %}">Saved Designs</a>
+                {% else %}
+                <a class="footer_link" href="{% url 'login' %}">Saved Designs</a>
+                {% endif %}
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h3 class="footer_heading">Company</h3>
+            <ul class="footer_list">
+              <li>
+                <a class="footer_link" href="{% url 'our-team' %}">Meet the Team</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr class="footer_hr" />
+      <div class="footer_bottom">
+        <p class="footer_copyright">© Credard Inc. 2022</p>
+        <div class="social">
+          <p>Follow us:</p>
+          <nav>
+            <ul class="social_link">
+              <li>
+                <a href="#" title="Twitter"
+                  ><img src="{% static 'Icons/Twitter.svg' %}" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="Facebook"
+                  ><img src="{% static 'Icons/Facebook.svg' %}" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="LinkedIn"
+                  ><img src="{% static 'Icons/Linked in.svg' %}" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title="Instagram"
+                  ><img src="{% static 'Icons/Instagram.svg' %}" alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+{% endblock content %}
+
+{% block scripts %}
+<script src="{% static 'js/hamburger.js' %}"></script>
+{% endblock scripts %}

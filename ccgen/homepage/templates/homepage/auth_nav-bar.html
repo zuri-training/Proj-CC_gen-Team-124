@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creadard</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./global.css" />
+  </head>
+  <body>
+    <div class="nav-div">
+      <div class="nav_left">
+        <img
+          class="nav_logo"
+          src="./assets/Icons/Layer 3.svg"
+          alt="Credard logo"
+        />
+        <nav class="nav_menu">
+          <ul class="nav_list">
+            <li>
+              <a class="nav_link" href="./how-it-works.html">How it works</a>
+            </li>
+            <li><a class="nav_link" href="#">Library</a></li>
+            <li><a class="nav_link" href="./team.html">The team</a></li>
+            <li><a class="nav_link" href="./contactUs.html">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav_right nav-right_auth">
+        <a href="#" class="nav_link">
+          <img src="./assets/Icons/Bookmark.svg" alt="bookmark" />
+        </a>
+        <a href="./profile.html" class="nav_link">
+          <img src="./assets/Icons/profile.svg" alt="profile" />
+        </a>
+      </div>
+      <button id="hamburger-btn" class="nav_btn">
+        <img src="./assets/Icons/menu - ham.svg" alt="" />
+      </button>
+    </div>
+    <div class="nav_hamburger-menu">
+      <nav id="hamburger-menu" class="ham_menu hide">
+        <ul>
+          <li><a class="ham_link" href="#">How it works</a></li>
+          <li><a class="ham_link" href="#">Library</a></li>
+          <li>
+            <a class="ham_link" href="./team.html">The team</a>
+          </li>
+          <li><a class="ham_link" href="./contactUs.html">Contact us</a></li>
+        </ul>
+        <div class="ham_auth">
+          <a href="#" class="ham_link"> Bookmark </a>
+          <a href="./profile.html" class="ham_link"> Profile </a>
+        </div>
+      </nav>
+    </div>
+
+    <script src="./hamburger.js" defer></script>
+  </body>
+</html>
