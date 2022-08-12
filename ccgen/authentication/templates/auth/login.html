@@ -22,10 +22,12 @@
           <div class="input-group">
             <label>Password</label>
             <input type="password" name="password" />
-            <span toggle="#password-field" class="toggle-password"
-              ><img src="{% static 'images/Shape.svg' %}"
-            /></span>
-            <p class="">Forgot your password?</p>
+            <span toggle="#password-field" class="toggle-password">
+              <img src="{% static 'images/Shape.svg' %}"/>
+            </span>
+            <p class="forgot-p">
+              <a href="{% url 'forgot-password' %}">Forgot your password?</a>
+            </p>
           </div>
           <button type="submit" class="login_button">Log In</button>
           <!-- <p class="text-center">or</p>

@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'contact.apps.ContactConfig',
     'library.apps.LibraryConfig',
     'userprofile.apps.UserprofileConfig',
+    'forgotpass.apps.ForgotpassConfig',
 ]
 
 MIDDLEWARE = [
