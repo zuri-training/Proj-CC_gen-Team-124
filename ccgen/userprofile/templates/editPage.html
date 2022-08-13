@@ -34,7 +34,7 @@
         <a href="{% url 'profile' %}" class="nav_login">
           <img src="{% static 'Icons/profile.svg' %}" alt="profile" />
         </a>
-        <form action="{% url 'logout' %}" method="POST">
+        <form action="{% url 'logout' %}" method="POST" class="logout_form">
           {% csrf_token %}
           <a href="{% url 'logout' %}"><button class="nav_register" type="submit">Logout</button></a>
         </form>

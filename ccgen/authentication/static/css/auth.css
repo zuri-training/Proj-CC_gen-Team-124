@@ -154,6 +154,9 @@ nav ul li img {
     justify-content: space-between;
     align-items: center;
   }
+  nav ul li img {
+    padding: 10px 10px;
+}
   button {
     min-width: 250px;
   }
@@ -164,4 +167,5 @@ nav ul li img {
     padding: 12px 0;
     min-width: 120px;
   }
+
 }
