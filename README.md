@@ -28,6 +28,69 @@ For information about how to contribute to this project, view the [contribution 
 
 ### Here is a link to our [userflow](https://www.figma.com/file/bjTdKLvYQ2bCLcZHe0S1lo/cc_gen-brain-storming?node-id=0%3A1) and [wireframe](https://www.figma.com/proto/yD5F6g67uY8Gj6GytXXj9S/Wireframes?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2)
 
+---
+
+### How to Run the Project Locally:
+
+- Clone the link to the git hub repository by running the following command on Command Prompt (Windows) or Terminal (Linux and MacOS).
+
+```
+ git clone https://github.com/zuri-training/Proj-CC_gen-Team-124.git
+```
+
+- Use the cd command to change directory to the cloned project. In this case, type:
+
+```
+cd Proj-CC_gen-Team-124
+```
+
+- Install venv for Python if you haven't done so using the pip install command
+
+```
+pip install venv
+```
+
+- Create a virtual environment using venv
+
+```
+python -m venv <virtual environment name>
+```
+
+- Activate the virtual environment using the following command
+
+```
+<virtual environment name>\Scripts\activate
+```
+
+- Run the following command to install the project requirements
+
+```
+pip install -r requirements.txt
+```
+
+- Change the file directory to the django project folder
+
+```
+cd ccgen
+```
+
+- Enter the following commands next
+
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+- Run the following command to start the project on a local host
+
+```
+python manage.py runserver
+```
+
+- Open the generated link on your browser. By default, it should be `http://127.0.0.1:8000`
+
+---
+
 ## Team Lead
 
 👤 **Victoria Adedayo**
