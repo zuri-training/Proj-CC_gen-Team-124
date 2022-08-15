@@ -131,10 +131,6 @@ python manage.py runserver
 
 - GitHub: [SidKay](https://github.com/SidKay)
 
-👤 **Udhe Austine Ogaga**
-
-- GitHub: [Austinet](https://github.com/Austinet)
-
 👤 **Muhiz Akanni**
 
 - GitHub: [muakone](https://github.com/muakone)
