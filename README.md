@@ -63,12 +63,8 @@ For information about how to contribute to this project, view the [contribution 
 👤 **Ola White Y.**
 - GitHub: [whitesoftx](https://github.com/whitesoftx)
 
-
 👤 **Sidney Anya**
 - GitHub: [SidKay](https://github.com/SidKay)
-
-👤 **Udhe Austine Ogaga**
-- GitHub: [Austinet](https://github.com/Austinet)
 
 👤 **Muhiz Akanni**
 - GitHub: [muakone](https://github.com/muakone)
