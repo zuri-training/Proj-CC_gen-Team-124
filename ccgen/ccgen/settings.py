@@ -90,11 +90,8 @@ WSGI_APPLICATION = 'ccgen.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ['DBASE_NAME'],
-        'USER': os.environ['DBASE_USER'],
-        'PASSWORD': os.environ['DBASE_PASSWORD'],
-        'HOST': os.environ['DBASE_HOST']
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
