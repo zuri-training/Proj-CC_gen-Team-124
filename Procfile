@@ -1,0 +1,1 @@
+web: gunicorn ccgen.ccgen.wsgi --log-file -
