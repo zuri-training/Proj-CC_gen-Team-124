@@ -1,1 +1,1 @@
-web: gunicorn ccgen.wsgi
+web: gunicorn ccgen.ccgen.wsgi
