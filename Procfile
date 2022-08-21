@@ -1,1 +1,1 @@
-web: gunicorn ccgen.wsgi --log-file -
+web: gunicorn --pythonpath ccgen ccgen.wsgi
